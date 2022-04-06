@@ -1,0 +1,776 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(247, 68, 202, 0.082);
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin-top: 0%;
+}
+
+/* ======= BODY =======*/
+
+
+
+#grid-area {
+    display: grid;
+    grid-template-areas:
+        "logo logo "
+        "buscador buscador"
+        "nav productos "
+        "categoria productos"
+        "categoria productos"
+        "pie pie "
+        "pie pie"
+        ;
+    grid-template-rows: min-content;
+    grid-column-gap: 2%;
+    grid-row-gap: 10px;
+    margin: 0%;
+
+}
+
+/*  BUSCADORES Y SELECCION DE ENTREGA */
+
+#buscadores{
+    grid-area: buscador;
+    justify-items: stretch;
+  
+}
+
+.form{
+    display: flex;
+    grid-area: buscador;
+    justify-items: stretch;
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+}
+
+
+
+
+        /* HEADER */
+
+
+header {
+    grid-area: logo;
+    justify-items: stretch;
+    align-items: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    height: fit-content;
+    background-color: white;
+}
+
+.secciondearriba{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0%;
+}
+
+.seccion {
+    
+    padding: 8px;
+
+    transition: all 0.5s;
+    list-style: none;
+}
+
+
+.seccion:hover{ 
+    background-color: rgba(238, 12, 181, 0.226);
+    border-radius: 25px;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.btn_menu {
+    display: none;
+}
+
+
+/* ICONOS DE FB E INSTAGRAM Y LOGO ENVIO FLORES */
+
+/* redes sociales =======*/
+
+.social-bar {
+    display: flex;
+    left: 0;
+    top: 45%;
+
+    align-items: flex-start;
+    z-index: 100;
+    height: fit-content;
+}
+
+
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    width: 5%;
+    height: fit-content;
+    margin-left: 1px;
+    transition: all .3s;
+}
+
+.icon:hover{
+    width: 60px;
+    transition: all .3s;
+    border-radius: 25px;
+    
+}
+
+.icon-facebook2 {
+    background: #2c0394;
+    color: white;
+    border-radius: 10px;
+    top: 10%;
+    display: flex;
+}
+
+.icon-instagram {
+    background:  #cc21b0;
+    border-radius: 10px;
+
+    top: 10%;
+    display: flex;
+}
+
+
+
+/* LOGO ENVIO FLORES */
+
+.envioflores {
+    
+    width: 80%;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+
+        /* NAVEGADOR Y CATEGORIAS */
+
+
+.NavMenu {
+    grid-area: nav;
+}
+
+#categoria {
+    grid-area: categoria;
+    align-items: center;
+    margin-top: 1%;
+}
+
+
+.category_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    scroll-snap-align: center;
+ }
+
+
+
+.category_list .category_item{
+    display: block;
+
+    padding: 5%;
+    margin-bottom: 15px;
+    background-color: rgba(255, 2, 44, 0.233);
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    transition: all 0.6s;
+
+}
+
+.category_list .category_item:hover {
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+
+}
+
+
+
+
+.category_list .ct_item-active { 
+    background-color: rgba(133, 17, 75, 0.829);
+}
+
+
+/* OCACIONES */
+
+#OCACIONES {
+    grid-area: ocacion;
+}
+
+
+        /* PRODUCTOS */
+
+#productos {
+    display: grid;
+    grid-area: productos;
+    justify-items: center;
+    grid-template-columns: 30% 30% 30%;
+    border: solid 1px black;
+    padding-top: 0.5%;
+    margin: 0%;
+    grid-column-gap: 1.5%;
+  
+}
+
+.listadeproductos {
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 2%;
+
+}
+
+.product-item {
+    width: fit-content;
+    background-color: rgba(250, 16, 16, 0.075);
+    margin-bottom: 10%;
+    transition: all .6s;
+    
+
+}
+
+
+.product-item:hover { 
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+
+}
+
+
+
+.product-item a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgba(46, 2, 13, 0.76);
+
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product-item img{
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+        /* PRODUCTO SELECCIONADO */
+
+#productoseleccionado{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo "
+    "imagen cantidad "
+    "imagen colorrosas "
+   ;
+    grid-template-columns: 40%;
+    grid-template-rows: 20;
+    grid-column-gap: 2px;
+    grid-row-gap: 10px;
+    max-width: 100%;
+
+
+}
+
+
+.tituloproducto {
+    grid-area: titulo;
+}
+
+.CANTIDADROSAS{
+    grid-area: cantidad;
+
+}
+
+.colorrosas{
+    grid-area: colorrosas;
+
+}
+
+.imagenproducto img{
+    grid-area: imagen;
+    width: 80%;
+}
+
+
+
+
+
+/* finalizar o seguir comprando */
+
+.btnfinalizar {
+    background-color: rgb(226, 87, 134);
+    border-radius: 20rem;
+    padding: 2%;
+    border: 2px solid black;
+    box-shadow: black;
+}
+
+.btnseguir {
+    background-color: rgb(252, 113, 217);
+    border-radius: 20rem;
+    padding: 2%;
+    border: 2px solid black;
+    box-shadow: black;
+    
+}
+
+
+
+
+
+
+
+/* ADICIONALES */
+
+#adicionales {
+    display: grid;
+
+    grid-template-areas:
+        "adic adic"
+        "ferrero choco"
+        "vinos peluche"
+        "globo globonum";
+    height: 100%;
+    grid-template-columns: 50%;
+    grid-auto-rows: 0fr 3fr 3fr 3fr;
+    background-color: white ;
+
+}
+
+.adic{
+    grid-area: adic;
+    height: fit-content;
+    width: 100%;
+}
+.ferrero{
+    grid-area: ferrero;
+    display: flex;
+    
+}
+.chocolates {
+    grid-area: choco;
+    display: flex;
+}
+
+.vinos {
+    grid-area: vinos;
+    display: flex;
+
+}
+
+.peluches {
+    grid-area: peluche;
+    display: flex;
+}
+
+.goblo {
+    grid-area: globo;
+    display: flex;
+}
+
+.globosnum {
+    grid-area: globonum;
+    display: flex;
+}
+
+
+.produadic{ 
+    width: 150px;
+    height: 150px;
+}
+
+        
+
+
+
+        /* FOOTER */
+
+footer {
+    grid-area: pie;
+    background-color:  rgb(216, 8, 42);
+
+
+}
+
+
+
+
+
+
+     /*======================== VISTA TABLETS ===========================*/
+
+@media screen and (max-width: 1024px) {
+
+
+    /* GRID AREA */
+    #grid-area {
+        display: grid;
+        grid-template-areas:
+            "logo logo "
+            "buscador buscador"
+            "nav productos "
+            "categoria productos"
+            "categoria productos"
+            "pie pie "
+             ;
+
+        grid-template-rows: min-content;
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    
+    #buscadores{
+        grid-area: buscador;
+        justify-items: stretch;
+      
+    }
+    
+    .form{
+        display: flex;
+        grid-area: buscador;
+        justify-items: stretch;
+        width: 100%;
+        height: fit-content;
+        margin: 0%;
+    }
+    
+    
+    
+    
+            /* HEADER */
+    
+    
+    header {
+        grid-area: logo;
+        justify-items: stretch;
+        align-items: auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        box-sizing: border-box;
+        height: fit-content;
+        background-color: white;
+    }
+    
+    .secciondearriba{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0%;
+    }
+    
+    .seccion {
+        display: flex;
+        padding: 1%;
+        border: 2px solid #410121bd;
+        height: max-content;
+        border-radius: 25px;
+        transition: all 0.5s;
+    
+    }
+    
+    
+    .seccion:hover{ 
+        background-color: rgba(238, 12, 181, 0.452);
+        border-radius: 35px;
+        transition: all 0.5s;
+        padding: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: small;
+    }
+    
+
+    /* productos vista movil */
+
+    #productos {
+        display: grid;
+        grid-area: productos;
+        justify-items: center;
+        grid-template-columns: 80%;
+        border: solid 1px black;
+        padding-top: 0.5%;
+        margin: 0%;
+        grid-column-gap: 2%;
+        grid-row-gap: 1%;
+    
+        
+    }
+    
+    .listadeproductos {
+        display: flex;
+        justify-content: space-around;
+        margin: 1%;
+        padding: 2%;
+    
+    }
+    
+    .product-item {
+        width: fit-content;
+        background-color: rgba(250, 16, 16, 0.075);
+        margin-bottom: 10%;
+        transition: all .6s;
+        
+    
+    }
+    
+    
+    .product-item:hover { 
+        -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+        box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    
+    }
+    
+    
+    
+    .product-item a{
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        background-color: rgba(46, 2, 13, 0.76);
+    
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .product-item img{
+        width: 100%;
+    
+    }
+    /* categorias vista movil */
+    nav {
+        grid-area: nav;
+        width: max-content;
+    }
+
+    #categoria {
+    grid-area: categoria;
+    align-items: center;
+    margin-top: 1%;
+    object-fit: contain;
+}
+
+
+.category_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+ }
+
+
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 2, 44, 0.233);
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    transition: all 0.6s;
+
+}
+}
+
+
+     /*======================== VISTA CELULARES ===========================*/
+
+@media screen and (max-width: 500px) {
+
+        /* GRID AREA */
+#grid-area {
+
+    flex-direction: column;      
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.form{
+    display: flex;
+    grid-area: buscador;
+    justify-items: stretch;
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+
+}
+        
+                /* HEADER */
+        
+        
+header {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: white;
+}
+
+.seccion {
+    display: none;
+}
+        
+.btn_menu {
+    display: flex;
+}
+        
+a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+        
+/* ICONOS DE FB E INSTAGRAM Y LOGO ENVIO FLORES */
+
+/* redes sociales =======*/
+
+.social-bar {
+    position: fixed;
+    left: 0;
+    top: 45%;
+    font-size: 0.05rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    height: fit-content;
+}
+
+
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 50%;
+    display: flex;
+    width: 30px;
+    height: fit-content;
+    margin-left: 1px;
+    transition: all .3s;
+    align-items: center;
+}
+
+.icon:hover{
+    width: 60px;
+    transition: all .3s;
+    border-radius: 25px;
+    
+}
+
+.icon-facebook2 {
+    background: #2c0394;
+    color: white;
+    border-radius: 10px;
+    float: left;
+
+}
+
+.icon-instagram {
+    background:  #cc21b0;
+    border-radius: 10px;
+    float:left
+}
+
+
+
+/* LOGO ENVIO FLORES */
+
+.envioflores {
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 100px;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+        /* productos vista movil */
+    
+#productos {
+    display: flex;
+    flex-direction: column;
+}
+        
+.listadeproductos {
+     display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 2%;
+        
+}
+        
+.product-item {
+    width: fit-content;
+    background-color: rgba(250, 16, 16, 0.075);
+    margin-bottom: 10%;
+    transition: all .6s;
+            
+}
+        
+        
+.product-item:hover { 
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+        
+}
+        
+        
+        
+.product-item a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgba(46, 2, 13, 0.76);
+        
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+ }
+        
+.product-item img{
+     width: 100%;
+        
+        }
+
+
+
+
+        /* categorias vista movil */
+
+    
+
+
+
+}
