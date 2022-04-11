@@ -22,14 +22,15 @@ body {
         "categoria productos"
         "categoria productos"
         "pie pie "
-        "pie pie"
-        ;
+        "pie pie";
     grid-template-rows: min-content;
-    grid-column-gap: 2%;
+    grid-column-gap: 1%;
     grid-row-gap: 10px;
-    margin: 0%;
-
+    grid-template-columns: 12% 85%;
+    margin: 1%;
+    margin-top: 0%;
 }
+
 
 /*  BUSCADORES Y SELECCION DE ENTREGA */
 
@@ -163,6 +164,9 @@ a {
 
         /* NAVEGADOR Y CATEGORIAS */
 
+ nav {
+     grid-area: nav;
+ }
 
 .NavMenu {
     grid-area: nav;
@@ -180,13 +184,15 @@ a {
     flex-direction: column;
     width: 100%;
     scroll-snap-align: center;
+    margin: 0%;
+
  }
 
 
 
 .category_list .category_item{
     display: block;
-
+    width: 90%;
     padding: 5%;
     margin-bottom: 15px;
     background-color: rgba(255, 2, 44, 0.233);
@@ -194,7 +200,8 @@ a {
     text-decoration: solid;
     color: white;
     transition: all 0.6s;
-
+    transition: all 0.6s;
+    box-sizing: border-box;
 }
 
 .category_list .category_item:hover {
@@ -213,9 +220,7 @@ a {
 
 /* OCACIONES */
 
-#OCACIONES {
-    grid-area: ocacion;
-}
+
 
 
         /* PRODUCTOS */
@@ -251,8 +256,8 @@ a {
 
 
 .product-item:hover { 
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.795);
+    box-shadow: 10px 10px 14px 2px rgba(104, 0, 0, 0.952);
 
 }
 
@@ -348,7 +353,7 @@ a {
 
 
 /* ADICIONALES */
-
+ 
 #adicionales {
     display: grid;
 
@@ -407,7 +412,7 @@ a {
 }
 
         
-
+ 
 
 
         /* FOOTER */
@@ -428,9 +433,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
+    
+
 
     /* GRID AREA */
-    #grid-area {
+     #grid-area {
         display: grid;
         grid-template-areas:
             "logo logo "
@@ -463,12 +470,12 @@ footer {
         margin: 0%;
     }
     
-    
+     
     
     
             /* HEADER */
     
-    
+ 
     header {
         grid-area: logo;
         justify-items: stretch;
@@ -508,7 +515,7 @@ footer {
         color: black;
         font-size: small;
     }
-    
+     
 
     /* productos vista movil */
 
@@ -517,12 +524,11 @@ footer {
         grid-area: productos;
         justify-items: center;
         grid-template-columns: 80%;
-        border: solid 1px black;
+        grid-row-gap: 10px;
         padding-top: 0.5%;
-        margin: 0%;
-        grid-column-gap: 2%;
-        grid-row-gap: 1%;
-    
+        grid-auto-rows: 450px;
+        object-fit: contain;
+        width: inherit;
         
     }
     
@@ -563,12 +569,14 @@ footer {
         text-decoration: none;
     }
     
-    .product-item img{
-        width: 100%;
+    .product-item img {
+        width: inherit;
+        height: 20vw;
+        object-fit: contain;
     
-    }
+    } 
     /* categorias vista movil */
-    nav {
+     nav {
         grid-area: nav;
         width: max-content;
     }
@@ -609,8 +617,13 @@ footer {
 
 @media screen and (max-width: 500px) {
 
+    .secciondearriba{
+        display: none;
+        list-style: none;
+    } 
+
         /* GRID AREA */
-#grid-area {
+ #grid-area {
 
     flex-direction: column;      
     margin: 0%;
@@ -625,7 +638,7 @@ footer {
     height: fit-content;
     margin: 0%;
 
-}
+} 
         
                 /* HEADER */
         
@@ -650,7 +663,7 @@ a {
     text-decoration: none;
     color: black;
     font-size: small;
-}
+} 
         
 /* ICONOS DE FB E INSTAGRAM Y LOGO ENVIO FLORES */
 
@@ -667,6 +680,12 @@ a {
     z-index: 100;
     height: fit-content;
 }
+
+.social-bar{
+    position: absolute;
+    top: 0%;
+}
+
 
 
 
@@ -702,7 +721,7 @@ a {
     border-radius: 10px;
     float:left
 }
-
+ 
 
 
 /* LOGO ENVIO FLORES */
@@ -714,10 +733,10 @@ a {
     margin: 0%;
     padding: 0%;
 
-}
+} 
 
         /* productos vista movil */
-    
+     
 #productos {
     display: flex;
     flex-direction: column;
@@ -761,16 +780,240 @@ a {
         
 .product-item img{
      width: 100%;
+}     
         
-        }
-
-
-
-
-        /* categorias vista movil */
-
+}
     
 
+/* redes sociales =======*/
 
 
+
+
+
+
+
+
+.icon-facebook {
+    background: #2c0394;
+    color: white;
+    border-radius: 10px;
+    float: left;
+}
+
+
+.icon-facebook:before {
+    content: "\e900";
+    color: white;
+}
+
+
+/* LOGO ENVIO FLORES */
+
+.envioflores {
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 100px;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+
+
+
+
+
+
+        /* VISTA DISPOISTIVOS */
+
+@media screen and (max-width: 1024px) {
+
+
+/* productos vista dispositivos */
+
+.product-item {
+    width: inherit;
+    height: 40vw;
+    display: flex;
+    margin: 1%;
+    object-fit: contain;
+}
+
+
+    /* categorias vista movil */
+  
+
+    #categoria {
+    grid-area: categoria;
+    align-items: center;
+    margin-top: 1%;
+    object-fit: contain;
+}
+
+
+.category_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+ }
+
+
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 2, 44, 0.233);
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    transition: all 0.6s;
+
+}
+
+}
+
+/* VISTA CELULARES */
+
+@media screen and (max-width: 500px) {
+
+    .secciondearriba{
+        display: none;
+        list-style: none;
+    }
+
+ 
+    
+    /* BODY */
+    #grid-area {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    
+    }
+
+    /* TITULO */
+
+    .EnvioFlores{
+        font-size: 52px;
+    }
+
+    /* SOCIAL BAR */
+
+    .social-bar{
+        position: absolute;
+        top: 0%;
+    }
+
+    /* NAV */
+
+    nav{
+        width: 100%;
+    }
+
+
+    /* CATEGORIA VISTA CELULAR */
+    #categoria {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+        display: flex;
+    }
+    
+    
+    .category_list {
+        display: initial;
+        flex-direction: row;
+        width: 100%;
+        scroll-snap-align: center;
+     }
+    
+    
+    
+    .category_list .category_item{
+        display: block;
+        margin-bottom: 15px;
+        background-color: rgba(255, 2, 44, 0.233);
+        text-align: center;
+        text-decoration: solid;
+        color: white;
+        transition: all 0.6s;
+        font-size: 16px;
+        font-family: bold;
+    }
+    
+    .category_list .category_item:hover {
+        -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+        box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    
+    }
+    .category_list .ct_item-active { 
+        background-color: rgba(133, 17, 75, 0.829);
+    }
+ 
+ #ocaciones {
+     display: none;
+ }
+
+    /* productos vista movil */
+  
+    #productos {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        box-sizing: border-box;
+        object-fit: contain;
+        width: inherit;
+    }
+#productoseleccionado{
+    display: grid;
+    grid-template-columns: 55%;
+    grid-template-areas:
+        "titulo titulo "
+        "imagen cantidad "
+        "imagen colorrosas ";
+    grid-column-gap: 2px;
+    grid-row-gap: 10px;
+    max-width: 100%;
+}
+.product-item {
+    width: 95%;
+    display: flex;
+    margin: 1%;
+
+}
+
+.product-item img {
+    width: inherit;
+    height: 50%;
+    object-fit: contain;
+
+}
+
+
+/* adicionales vista celular */
+
+#adicionales {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    height: auto;
+}
+
+.adic{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+/* FOOTER VISTA CELULAR */
+footer {
+    display: flex;
+}
 }
