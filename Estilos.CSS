@@ -989,7 +989,7 @@ a {
 
 .product-item img {
     width: inherit;
-    height: 50%;
+
     object-fit: contain;
 
 }
