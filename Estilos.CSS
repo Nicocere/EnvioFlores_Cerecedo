@@ -152,12 +152,13 @@ a {
 
 /* LOGO ENVIO FLORES */
 
-.envioflores {
-    
-    width: 80%;
-    margin: 0%;
-    padding: 0%;
+.carousel {
 
+    text-align: -webkit-center;
+}
+.d-flex {
+    display: flex!important;
+    width: inherit;
 }
 
 
@@ -230,7 +231,6 @@ a {
     grid-area: productos;
     justify-items: center;
     grid-template-columns: 30% 30% 30%;
-    border: solid 1px black;
     padding-top: 0.5%;
     margin: 0%;
     grid-column-gap: 1.5%;
@@ -571,7 +571,6 @@ footer {
     
     .product-item img {
         width: inherit;
-        height: 20vw;
         object-fit: contain;
     
     } 
