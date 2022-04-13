@@ -266,7 +266,7 @@ a {
 .product-item a{
     display: block;
     width: 100%;
-    padding: 8px 0;
+    padding: 0;
     background-color: rgba(46, 2, 13, 0.76);
 
     color: #fff;
@@ -561,9 +561,8 @@ footer {
     .product-item a{
         display: block;
         width: 100%;
-        padding: 8px 0;
         background-color: rgba(46, 2, 13, 0.76);
-    
+        padding-top: 0%;
         color: #fff;
         text-align: center;
         text-decoration: none;
