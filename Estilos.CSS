@@ -575,9 +575,10 @@ footer {
     
     } 
     /* categorias vista movil */
-     nav {
+    
+    navmenu {
         grid-area: nav;
-        width: max-content;
+    
     }
 
     #categoria {
