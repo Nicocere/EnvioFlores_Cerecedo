@@ -1,0 +1,386 @@
+/*======================== VISTA TABLETS ===========================*/
+/* GRID AREA */
+/* HEADER */
+/* productos vista movil */
+/* categorias vista movil */
+/*======================== VISTA CELULARES ===========================*/
+/* GRID AREA */
+/* HEADER */
+/* ICONOS DE FB E INSTAGRAM Y LOGO ENVIO FLORES */
+/* redes sociales =======*/
+/* LOGO ENVIO FLORES */
+/* productos vista movil */
+/* redes sociales =======*/
+/* LOGO ENVIO FLORES */
+/* VISTA DISPOISTIVOS */
+/* productos vista dispositivos */
+/* categorias vista movil */
+/* VISTA CELULARES */
+/* BODY */
+/* TITULO */
+/* SOCIAL BAR */
+/* NAV */
+/* CATEGORIA VISTA CELULAR */
+/* productos vista movil */
+/* adicionales vista celular */
+/* FOOTER VISTA CELULAR */
+@media screen and (max-width: 1024px) {
+	#grid-area {
+		display: grid;
+		grid-template-areas: "logo logo "
+        "buscador buscador"
+        "nav productos "
+        "categoria productos"
+        "categoria productos"
+        "pie pie";
+		grid-template-rows: min-content;
+		grid-column-gap: 2%;
+		grid-row-gap: 2%;
+		margin: 0%;
+		box-sizing: border-box;
+	}
+	#buscadores {
+		grid-area: buscador;
+		justify-items: stretch;
+	}
+	.form {
+		display: flex;
+		grid-area: buscador;
+		justify-items: stretch;
+		width: 100%;
+		height: fit-content;
+		margin: 0%;
+	}
+	header {
+		grid-area: logo;
+		justify-items: stretch;
+		align-items: auto;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		box-sizing: border-box;
+		height: fit-content;
+		background-color: white;
+	}
+	.secciondearriba {
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 0%;
+	}
+	.seccion {
+		display: flex;
+		padding: 1%;
+		border-radius: 25px;
+		transition: all 0.5s;
+		background: local;
+		&:hover {
+			background-color: rgba(238, 12, 181, 0.452);
+			border-radius: 35px;
+			transition: all 0.5s;
+			padding: 15px;
+		}
+		a {
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+		}
+	}
+	#productos {
+		display: grid;
+		grid-area: productos;
+		justify-items: center;
+		grid-template-columns: 80%;
+		grid-row-gap: 10px;
+		padding-top: 0.5%;
+		grid-auto-rows: 450px;
+		object-fit: contain;
+		width: inherit;
+	}
+	.listadeproductos {
+		display: flex;
+		justify-content: space-around;
+		margin: 1%;
+		padding: 2%;
+	}
+	.product-item {
+		width: fit-content;
+		background-color: rgba(250, 16, 16, 0.075);
+		margin-bottom: 10%;
+		transition: all .6s;
+		width: inherit;
+		height: 40vw;
+		display: flex;
+		margin: 1%;
+		object-fit: contain;
+		&:hover {
+			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		}
+		a {
+			display: block;
+			width: 100%;
+			background-color: rgba(46, 2, 13, 0.76);
+			padding-top: 0%;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+		}
+		img {
+			width: inherit;
+			object-fit: contain;
+		}
+	}
+	navmenu {
+		grid-area: nav;
+	}
+	#categoria {
+		grid-area: categoria;
+		align-items: center;
+		margin-top: 1%;
+		object-fit: contain;
+		grid-area: categoria;
+		align-items: center;
+		margin-top: 1%;
+		object-fit: contain;
+	}
+	.category_list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		.category_item {
+			display: block;
+			width: 90%;
+			padding: 10px;
+			margin-bottom: 15px;
+			background-color: rgba(255, 2, 44, 0.233);
+			text-align: center;
+			text-decoration: solid;
+			color: white;
+			transition: all 0.6s;
+			display: block;
+			width: 90%;
+			padding: 10px;
+			margin-bottom: 15px;
+			background-color: rgba(255, 2, 44, 0.233);
+			text-align: center;
+			text-decoration: solid;
+			color: white;
+			transition: all 0.6s;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	.secciondearriba {
+		display: none;
+		list-style: none;
+		display: none;
+		list-style: none;
+	}
+	#grid-area {
+		flex-direction: column;
+		margin: 0%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+	}
+	.form {
+		display: flex;
+		grid-area: buscador;
+		justify-items: stretch;
+		width: 100%;
+		height: fit-content;
+		margin: 0%;
+	}
+	header {
+		display: flex;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		box-sizing: border-box;
+		height: fit-content;
+		background-color: white;
+	}
+	.seccion {
+		display: none;
+	}
+	.btn_menu {
+		display: flex;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: small;
+	}
+	.social-bar {
+		position: fixed;
+		left: 0;
+		top: 45%;
+		font-size: 0.05rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		z-index: 100;
+		height: fit-content;
+		position: absolute;
+		top: 0%;
+		position: absolute;
+		top: 0%;
+	}
+	.icon {
+		color: white;
+		text-decoration: none;
+		padding: 50%;
+		display: flex;
+		width: 30px;
+		height: fit-content;
+		margin-left: 1px;
+		transition: all .3s;
+		align-items: center;
+		&:hover {
+			width: 60px;
+			transition: all .3s;
+			border-radius: 25px;
+		}
+	}
+	.icon-facebook2 {
+		background: #2c0394;
+		color: white;
+		border-radius: 10px;
+		float: left;
+	}
+	.icon-instagram {
+		background: #cc21b0;
+		border-radius: 10px;
+		float: left;
+	}
+	.envioflores {
+		text-align: center;
+		font-family: 'Fleur De Leah', cursive;
+		font-size: 100px;
+		margin: 0%;
+		padding: 0%;
+	}
+	#productos {
+		display: flex;
+		flex-direction: column;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		box-sizing: border-box;
+		object-fit: contain;
+		width: inherit;
+	}
+	.listadeproductos {
+		display: flex;
+		justify-content: space-around;
+		margin: 1%;
+		padding: 2%;
+	}
+	.product-item {
+		width: fit-content;
+		background-color: rgba(250, 16, 16, 0.075);
+		margin-bottom: 10%;
+		transition: all .6s;
+		width: 95%;
+		display: flex;
+		margin: 1%;
+		&:hover {
+			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		}
+		a {
+			display: block;
+			width: 100%;
+			padding: 8px 0;
+			background-color: rgba(46, 2, 13, 0.76);
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+		}
+		img {
+			width: 100%;
+			width: inherit;
+			object-fit: contain;
+		}
+	}
+	.EnvioFlores {
+		font-size: 52px;
+	}
+	nav {
+		width: 100%;
+	}
+	#categoria {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1%;
+		display: flex;
+	}
+	.category_list {
+		display: initial;
+		flex-direction: row;
+		width: 100%;
+		scroll-snap-align: center;
+		.category_item {
+			display: block;
+			margin-bottom: 15px;
+			background-color: rgba(255, 2, 44, 0.233);
+			text-align: center;
+			text-decoration: solid;
+			color: white;
+			transition: all 0.6s;
+			font-size: 16px;
+			font-family: bold;
+			&:hover {
+				-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+				box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+			}
+		}
+		.ct_item-active {
+			background-color: rgba(133, 17, 75, 0.829);
+		}
+	}
+	#ocaciones {
+		display: none;
+	}
+	#productoseleccionado {
+		display: grid;
+		grid-template-columns: 55%;
+		grid-template-areas: "titulo titulo"
+        "imagen cantidad"
+        "imagen colorrosas";
+		grid-column-gap: 2px;
+		grid-row-gap: 10px;
+		max-width: 100%;
+	}
+	#adicionales {
+		display: flex;
+		background-color: white;
+		flex-direction: column;
+		height: auto;
+	}
+	.adic {
+		display: flex;
+		height: fit-content;
+		width: 100%;
+		flex-direction: column;
+	}
+	footer {
+		display: flex;
+	}
+}
+.icon-facebook {
+	background: #2c0394;
+	color: white;
+	border-radius: 10px;
+	float: left;
+	&:before {
+		content: "\e900";
+		color: white;
+	}
+}
+.envioflores {
+	text-align: center;
+	font-family: 'Fleur De Leah', cursive;
+	font-size: 100px;
+	margin: 0%;
+	padding: 0%;
+}

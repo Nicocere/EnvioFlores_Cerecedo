@@ -1,0 +1,319 @@
+/* ======= BODY =======*/
+/*  BUSCADORES Y SELECCION DE ENTREGA */
+/* HEADER */
+/* ICONOS DE FB E INSTAGRAM Y LOGO ENVIO FLORES */
+/* redes sociales =======*/
+/* LOGO ENVIO FLORES */
+/* logo cuando seleccionan el producto */
+/* NAVEGADOR Y CATEGORIAS */
+/* OCACIONES */
+/* PRODUCTOS */
+/* PRODUCTO SELECCIONADO */
+/* finalizar o seguir comprando */
+/* ADICIONALES */
+/* REGISTRO */
+/* FOOTER */
+
+@import "responsive";
+
+
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: rgba(241, 161, 217, 0.082);
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	margin-top: 0%;
+}
+#grid-area {
+	display: grid;
+	grid-template-areas: "logo logo "
+    "buscador buscador"
+    "nav productos "
+    "categoria productos"
+    "categoria productos"
+    "pie pie "
+    "pie pie";
+	grid-template-rows: min-content;
+	grid-column-gap: 1%;
+	grid-row-gap: 10px;
+	grid-template-columns: 12% 85%;
+	margin: 1%;
+	margin-top: 0%;
+}
+#buscadores {
+	grid-area: buscador;
+	justify-items: stretch;
+}
+.form {
+	display: flex;
+	grid-area: buscador;
+	justify-items: stretch;
+	width: 100%;
+	height: fit-content;
+	margin: 0%;
+}
+header {
+	grid-area: logo;
+	justify-items: stretch;
+	align-items: auto;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	height: fit-content;
+	background-color: white;
+}
+.secciondearriba {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0%;
+	background: #690269d5;
+	border-bottom: 2px solid black;
+}
+.seccion {
+	padding: 8px;
+	transition: all 0.5s;
+	list-style: none;
+	background: local;
+	
+    &:hover {
+		background-color: rgba(83, 0, 0, 0.63);
+		border-radius: 10px;
+		transition: all 0.5s;
+		padding: 15px;
+		text-decoration: none;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		background: local;
+	}
+}
+.btn_menu {
+	display: none;
+}
+.social-bar {
+	display: flex;
+	left: 0;
+	top: 45%;
+	align-items: flex-start;
+	z-index: 100;
+	height: fit-content;
+}
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: 1%;
+	display: flex;
+	width: 5%;
+	height: fit-content;
+	margin-left: 1px;
+	transition: all .3s;
+	
+    &:hover {
+		width: 60px;
+		transition: all .3s;
+		border-radius: 25px;
+	}
+}
+.icon-facebook2 {
+	background: #2c0394;
+	color: white;
+	border-radius: 10px;
+	top: 10%;
+	display: flex;
+}
+.icon-instagram {
+	background: #cc21b0;
+	border-radius: 10px;
+	top: 10%;
+	display: flex;
+}
+.carousel {
+	text-align: -webkit-center;
+}
+.d-flex {
+	display: flex !important;
+	width: inherit;
+	height: 250px;
+}
+.logo_en_producto {
+	width: 95%;
+	height: 250px;
+	background: local;
+}
+nav {
+	grid-area: nav;
+}
+.NavMenu {
+	grid-area: nav;
+}
+#categoria {
+	grid-area: categoria;
+	align-items: center;
+	margin-top: 1%;
+}
+.category_list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	scroll-snap-align: center;
+	margin: 0%;
+	
+    .category_item {
+		display: block;
+		width: auto;
+		padding: 5%;
+		margin-bottom: 15px;
+		background-color: rgba(255, 2, 44, 0.233);
+		text-align: center;
+		text-decoration: solid;
+		color: white;
+		transition: all 0.6s;
+		transition: all 0.6s;
+		box-sizing: border-box;
+		
+        &:hover {
+			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		}
+	}
+	
+    .ct_item-active {
+		background-color: rgba(133, 17, 75, 0.829);
+	}
+}
+
+#productos {
+	display: grid;
+	grid-area: productos;
+	justify-items: center;
+	grid-template-columns: 30% 30% 30%;
+	padding-top: 0.5%;
+	margin: 0%;
+	grid-column-gap: 1.5%;
+}
+
+.listadeproductos {
+	display: flex;
+	justify-content: space-around;
+	margin: 1%;
+	padding: 2%;
+}
+.product-item {
+	width: fit-content;
+	background-color: rgba(250, 16, 16, 0.075);
+	margin-bottom: 10%;
+	transition: all .6s;
+	
+    &:hover {
+		-webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.795);
+		box-shadow: 10px 10px 14px 2px rgba(104, 0, 0, 0.952);
+	}
+	
+    a {
+		display: block;
+		width: 100%;
+		padding: 0;
+		background-color: rgba(46, 2, 13, 0.76);
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+    img {
+		width: 100%;
+	}
+}
+
+#productoseleccionado {
+	display: grid;
+	grid-template-areas: 
+    "titulo titulo "
+    "imagen cantidad "
+    "imagen colorrosas ";
+	grid-template-columns: 40%;
+	grid-template-rows: 20;
+	grid-column-gap: 2px;
+	grid-row-gap: 10px;
+	max-width: 100%;
+}
+.tituloproducto {
+	grid-area: titulo;
+}
+.CANTIDADROSAS {
+	grid-area: cantidad;
+}
+.colorrosas {
+	grid-area: colorrosas;
+}
+.imagenproducto {
+	img {
+		grid-area: imagen;
+		width: 80%;
+	}
+}
+
+.btnfinalizar {
+	background-color: rgb(226, 87, 134);
+	border-radius: 20rem;
+	padding: 1.5%;
+	border: 2px solid black;
+}
+.btnseguir {
+	background-color: rgb(252, 113, 217);
+	border-radius: 20rem;
+	padding: 1.5%;
+	border: 2px solid black;
+}
+
+#adicionales {
+	display: grid;
+	grid-template-areas: "adic adic" "ferrero choco" "vinos peluche" "globo globonum";
+	height: 100%;
+	grid-template-columns: 50%;
+	grid-auto-rows: 0fr 3fr 3fr 3fr;
+	background-color: white;
+}
+.adic {
+	grid-area: adic;
+	height: fit-content;
+	width: 100%;
+}
+.ferrero {
+	grid-area: ferrero;
+	display: flex;
+}
+.chocolates {
+	grid-area: choco;
+	display: flex;
+}
+.vinos {
+	grid-area: vinos;
+	display: flex;
+}
+.peluches {
+	grid-area: peluche;
+	display: flex;
+}
+.goblo {
+	grid-area: globo;
+	display: flex;
+}
+.globosnum {
+	grid-area: globonum;
+	display: flex;
+}
+.produadic {
+	width: 150px;
+	height: 150px;
+}
+#registro {
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	grid-area: pie;
+	background-color: rgb(216, 8, 42);
+}
