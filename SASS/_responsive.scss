@@ -127,7 +127,7 @@
 			object-fit: contain;
 		}
 	}
-	navmenu {
+	.navmenu {
 		grid-area: nav;
 	}
 	#categoria {
@@ -169,37 +169,41 @@
 		}
 	}
 }
+
+
 @media screen and (max-width: 500px) {
-	.secciondearriba {
-		display: none;
-		list-style: none;
-		display: none;
-		list-style: none;
-	}
-	#grid-area {
-		flex-direction: column;
-		margin: 0%;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		box-sizing: border-box;
-	}
-	.form {
-		display: flex;
-		grid-area: buscador;
-		justify-items: stretch;
-		width: 100%;
-		height: fit-content;
-		margin: 0%;
-	}
-	header {
-		display: flex;
-		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-		box-sizing: border-box;
-		height: fit-content;
-		background-color: white;
-	}
-	.seccion {
+
+.secciondearriba {
+	display: none;
+	list-style: none;
+	display: none;
+	list-style: none;
+}
+
+#grid-area {
+	flex-direction: column;
+	margin: 0%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.form {
+	display: flex;
+	grid-area: buscador;
+	justify-items: stretch;
+	width: 100%;
+	height: fit-content;
+	margin: 0%;
+}
+header {
+	display: flex;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	box-sizing: border-box;
+	height: fit-content;
+	background-color: white;
+}
+.seccion {
 		display: none;
 	}
 	.btn_menu {
@@ -275,7 +279,7 @@
 		margin: 1%;
 		padding: 2%;
 	}
-	.product-item {
+.product-item {
 		width: fit-content;
 		background-color: rgba(250, 16, 16, 0.075);
 		margin-bottom: 10%;
@@ -301,20 +305,20 @@
 			width: inherit;
 			object-fit: contain;
 		}
-	}
-	.EnvioFlores {
+}
+.EnvioFlores {
 		font-size: 52px;
-	}
-	nav {
+}
+nav {
 		width: 100%;
-	}
-	#categoria {
+}
+#categoria {
 		flex-direction: column;
 		align-items: center;
 		margin-top: 1%;
 		display: flex;
-	}
-	.category_list {
+}
+.category_list {
 		display: initial;
 		flex-direction: row;
 		width: 100%;
@@ -337,11 +341,11 @@
 		.ct_item-active {
 			background-color: rgba(133, 17, 75, 0.829);
 		}
-	}
-	#ocaciones {
+}
+#ocaciones {
 		display: none;
-	}
-	#productoseleccionado {
+}
+#productoseleccionado {
 		display: grid;
 		grid-template-columns: 55%;
 		grid-template-areas: "titulo titulo"
@@ -350,23 +354,23 @@
 		grid-column-gap: 2px;
 		grid-row-gap: 10px;
 		max-width: 100%;
-	}
-	#adicionales {
+}
+#adicionales {
 		display: flex;
 		background-color: white;
 		flex-direction: column;
 		height: auto;
-	}
-	.adic {
+}
+.adic {
 		display: flex;
 		height: fit-content;
 		width: 100%;
 		flex-direction: column;
-	}
+}
 	footer {
 		display: flex;
 	}
-}
+
 .icon-facebook {
 	background: #2c0394;
 	color: white;
@@ -383,4 +387,5 @@
 	font-size: 100px;
 	margin: 0%;
 	padding: 0%;
+}
 }

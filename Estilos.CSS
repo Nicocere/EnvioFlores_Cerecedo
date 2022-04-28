@@ -112,6 +112,7 @@ header {
     align-items: flex-start;
     z-index: 100;
     height: fit-content;
+    position: sticky;
 }
 
 .icon {
