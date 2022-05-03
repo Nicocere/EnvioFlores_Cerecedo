@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 100%;
+
     margin-top: 0%;
 }
 
@@ -289,12 +289,6 @@ header {
 
 }
 
-
-
-
-
-
-
         /* PRODUCTO SELECCIONADO */
 
 #productoseleccionado{
@@ -356,12 +350,6 @@ header {
     
 }
 
-
-
-
-
-
-
 /* ADICIONALES */
  
 #adicionales {
@@ -373,7 +361,6 @@ header {
         "vinos peluche"
         "globo globonum";
     height: 100%;
-    grid-template-columns: 50%;
     grid-auto-rows: 0fr 3fr 3fr 3fr;
     background-color: white ;
 
@@ -592,10 +579,10 @@ footer {
     } 
     /* categorias vista movil */
     
-    navmenu {
+.navmenu {
         grid-area: nav;
     
-    }
+}
 
     #categoria {
     grid-area: categoria;
@@ -780,9 +767,7 @@ a {
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
         
 }
-        
-        
-        
+              
 .product-item a{
     display: block;
     width: 100%;
@@ -795,20 +780,16 @@ a {
  }
         
 .product-item img{
-     width: 100%;
+    object-fit: contain;
+    width: 150px;
+    height: 155px;
+    background: #603942;
 }     
         
 }
     
 
 /* redes sociales =======*/
-
-
-
-
-
-
-
 
 .icon-facebook {
     background: #2c0394;
@@ -834,13 +815,6 @@ a {
     padding: 0%;
 
 }
-
-
-
-
-
-
-
 
         /* VISTA DISPOISTIVOS */
 
@@ -902,8 +876,7 @@ a {
         list-style: none;
     }
 
- 
-    
+  
     /* BODY */
     #grid-area {
         display: flex;
@@ -971,7 +944,7 @@ a {
         background-color: rgba(133, 17, 75, 0.829);
     }
  
- #ocaciones {
+#ocaciones {
      display: none;
  }
 

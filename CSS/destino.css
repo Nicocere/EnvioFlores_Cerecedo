@@ -20,7 +20,6 @@
 }
 
 body {
-  width: 100%;
   margin-top: 0%;
 }
 
@@ -362,7 +361,7 @@ footer {
     grid-template-areas: "logo logo " "buscador buscador" "nav productos " "categoria productos" "categoria productos" "pie pie";
     grid-template-rows: min-content;
     grid-column-gap: 2%;
-    grid-row-gap: 2%;
+    grid-row-gap: 5%;
     margin: 0%;
     box-sizing: border-box;
   }
@@ -612,8 +611,6 @@ footer {
   #productos {
     display: flex;
     flex-direction: column;
-    display: flex;
-    flex-direction: column;
     justify-items: center;
     box-sizing: border-box;
     object-fit: contain;
@@ -623,8 +620,8 @@ footer {
   .listadeproductos {
     display: flex;
     justify-content: space-around;
-    margin: 1%;
-    padding: 2%;
+    margin: 5%;
+    padding: 5%;
   }
 
   .product-item {
@@ -650,9 +647,10 @@ footer {
     text-decoration: none;
   }
   .product-item img {
-    width: 100%;
-    width: inherit;
     object-fit: contain;
+    width: 150px;
+    height: 155px;
+    background: #603942;
   }
 
   .EnvioFlores {

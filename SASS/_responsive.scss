@@ -35,7 +35,7 @@
         "pie pie";
 		grid-template-rows: min-content;
 		grid-column-gap: 2%;
-		grid-row-gap: 2%;
+		grid-row-gap: 5%;
 		margin: 0%;
 		box-sizing: border-box;
 	}
@@ -266,18 +266,17 @@ header {
 	#productos {
 		display: flex;
 		flex-direction: column;
-		display: flex;
-		flex-direction: column;
 		justify-items: center;
 		box-sizing: border-box;
 		object-fit: contain;
 		width: inherit;
+		
 	}
 	.listadeproductos {
 		display: flex;
 		justify-content: space-around;
-		margin: 1%;
-		padding: 2%;
+		margin: 5%;
+		padding: 5%;
 	}
 .product-item {
 		width: fit-content;
@@ -301,9 +300,10 @@ header {
 			text-decoration: none;
 		}
 		img {
-			width: 100%;
-			width: inherit;
 			object-fit: contain;
+			width: 150px;
+			height: 155px;
+			background: #603942;
 		}
 }
 .EnvioFlores {
