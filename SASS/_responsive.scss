@@ -215,16 +215,12 @@ header {
 		font-size: small;
 	}
 	.social-bar {
-		position: fixed;
 		left: 0;
-		top: 45%;
-		font-size: 0.05rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		z-index: 100;
 		height: fit-content;
-		position: absolute;
 		top: 0%;
 		position: absolute;
 		top: 0%;
@@ -248,13 +244,15 @@ header {
 	.icon-facebook2 {
 		background: #2c0394;
 		color: white;
-		border-radius: 10px;
+		border-radius: 5px;
 		float: left;
+		padding: 10px;
 	}
 	.icon-instagram {
 		background: #cc21b0;
-		border-radius: 10px;
+		border-radius: 5px;
 		float: left;
+		padding: 10px;
 	}
 	.envioflores {
 		text-align: center;
@@ -286,6 +284,7 @@ header {
 		width: 95%;
 		display: flex;
 		margin: 1%;
+		border-radius: 15px;
 		&:hover {
 			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
@@ -298,6 +297,7 @@ header {
 			color: #fff;
 			text-align: center;
 			text-decoration: none;
+			border-radius: 10px;
 		}
 		img {
 			object-fit: contain;
@@ -333,6 +333,7 @@ nav {
 			transition: all 0.6s;
 			font-size: 16px;
 			font-family: bold;
+			border-radius: 15px;
 			&:hover {
 				-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 				box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);

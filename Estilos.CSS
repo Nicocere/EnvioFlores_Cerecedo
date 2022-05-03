@@ -758,6 +758,7 @@ a {
     background-color: rgba(250, 16, 16, 0.075);
     margin-bottom: 10%;
     transition: all .6s;
+    border-radius: 15px;
             
 }
         
@@ -773,7 +774,7 @@ a {
     width: 100%;
     padding: 8px 0;
     background-color: rgba(46, 2, 13, 0.76);
-        
+    border-radius: 15px;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -897,6 +898,40 @@ a {
         position: absolute;
         top: 0%;
     }
+    .icon {
+        color: white;
+        text-decoration: none;
+        padding: 50%;
+        display: flex;
+        width: 30px;
+        height: fit-content;
+        margin-left: 1px;
+        transition: all .3s;
+        align-items: center;
+    }
+    
+    .icon:hover{
+        width: 60px;
+        transition: all .3s;
+        border-radius: 25px;
+        
+    }
+    
+    .icon-facebook2 {
+        background: #2c0394;
+        color: white;
+        border-radius: 5px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .icon-instagram {
+        background:  #cc21b0;
+        border-radius: 5px;
+        float:left;
+        padding: 10px;
+        
+    }
 
     /* NAV */
 
@@ -933,6 +968,7 @@ a {
         transition: all 0.6s;
         font-size: 16px;
         font-family: bold;
+        border-radius: 15px;
     }
     
     .category_list .category_item:hover {
