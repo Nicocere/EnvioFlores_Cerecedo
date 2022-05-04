@@ -168,7 +168,7 @@ nav {
 		text-align: center;
 		text-decoration: solid;
 		color: white;
-		transition: all 0.6s;
+		border-radius: 8px;
 		transition: all 0.6s;
 		box-sizing: border-box;
 		
@@ -201,9 +201,10 @@ nav {
 }
 .product-item {
 	width: fit-content;
-	background-color: rgba(250, 16, 16, 0.075);
+	background-color: rgb(46 3 13);
 	margin-bottom: 10%;
 	transition: all .6s;
+	border-radius: 8px;
 	
     &:hover {
 		-webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.795);
@@ -218,10 +219,12 @@ nav {
 		color: #fff;
 		text-align: center;
 		text-decoration: none;
+		border-radius: 10px;
 	}
 	
     img {
 		width: 100%;
+		height: 300px;
 	}
 }
 

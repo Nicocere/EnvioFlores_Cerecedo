@@ -176,7 +176,7 @@ nav {
   text-align: center;
   text-decoration: solid;
   color: white;
-  transition: all 0.6s;
+  border-radius: 8px;
   transition: all 0.6s;
   box-sizing: border-box;
 }
@@ -207,9 +207,10 @@ nav {
 
 .product-item {
   width: fit-content;
-  background-color: rgba(250, 16, 16, 0.075);
+  background-color: rgb(46, 3, 13);
   margin-bottom: 10%;
   transition: all 0.6s;
+  border-radius: 8px;
 }
 .product-item:hover {
   -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.795);
@@ -223,9 +224,11 @@ nav {
   color: #fff;
   text-align: center;
   text-decoration: none;
+  border-radius: 10px;
 }
 .product-item img {
   width: 100%;
+  height: 300px;
 }
 
 #productoseleccionado {
@@ -360,6 +363,7 @@ footer {
     display: grid;
     grid-template-areas: "logo logo " "buscador buscador" "nav productos " "categoria productos" "categoria productos" "pie pie";
     grid-template-rows: min-content;
+    grid-template-columns: 20% 80%;
     grid-column-gap: 2%;
     grid-row-gap: 5%;
     margin: 0%;
@@ -456,10 +460,12 @@ footer {
     color: #fff;
     text-align: center;
     text-decoration: none;
+    height: 350px;
   }
   .product-item img {
     width: inherit;
     object-fit: contain;
+    height: 320px;
   }
 
   .navmenu {
@@ -487,16 +493,7 @@ footer {
   }
   .category_list .category_item {
     display: block;
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: rgba(255, 2, 44, 0.233);
-    text-align: center;
-    text-decoration: solid;
-    color: white;
-    transition: all 0.6s;
-    display: block;
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     background-color: rgba(255, 2, 44, 0.233);
