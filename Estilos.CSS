@@ -68,8 +68,9 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin: 0%;
-    background: #690269d5;
+    background: linear-gradient(#ff00a5, #58025a);
     border-bottom: 2px solid black;
+    padding: 5;
 
 }
 
@@ -213,6 +214,7 @@ header {
     transition: all 0.6s;
     transition: all 0.6s;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .category_list .category_item:hover {
@@ -220,9 +222,6 @@ header {
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 
 }
-
-
-
 
 .category_list .ct_item-active { 
     background-color: rgba(133, 17, 75, 0.829);
@@ -294,12 +293,10 @@ header {
 #productoseleccionado{
     display: grid;
     grid-template-areas:
-    "titulo titulo "
-    "imagen cantidad "
-    "imagen colorrosas "
-   ;
-    grid-template-columns: 40%;
-    grid-template-rows: 20;
+        "titulo titulo "
+        "imagen cantidad "
+        "imagen colorrosas ";
+    grid-template-columns: 55% 40%;
     grid-column-gap: 2px;
     grid-row-gap: 10px;
     max-width: 100%;
@@ -326,35 +323,47 @@ header {
     grid-area: imagen;
     width: 80%;
 }
-
-
+.imagenproducto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 
 /* finalizar o seguir comprando */
 
+.botonescompra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
 .btnfinalizar {
-    background-color: rgb(226, 87, 134);
-    border-radius: 20rem;
+    background-color: rgb(119, 9, 91);
+    border-radius: 20px;
     padding: 1.5%;
     border: 2px solid black;
-
+    margin: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .btnseguir {
     background-color: rgb(252, 113, 217);
-    border-radius: 20rem;
+    border-radius: 20px;
     padding: 1.5%;
     border: 2px solid black;
-
-    
+    margin: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 /* ADICIONALES */
  
 #adicionales {
     display: grid;
-
     grid-template-areas:
         "adic adic"
         "ferrero choco"
@@ -362,44 +371,63 @@ header {
         "globo globonum";
     height: 100%;
     grid-auto-rows: 0fr 3fr 3fr 3fr;
-    background-color: white ;
-
+    background: white;
+    grid-template-columns: 350% 350%;
+    justify-items: center;
+    align-items: center;
 }
 
 .adic{
     grid-area: adic;
     height: fit-content;
-    width: 100%;
+
 }
 .ferrero{
     grid-area: ferrero;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
     
 }
 .chocolates {
     grid-area: choco;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .vinos {
     grid-area: vinos;
     display: flex;
-
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .peluches {
     grid-area: peluche;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .goblo {
     grid-area: globo;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .globosnum {
     grid-area: globonum;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 
@@ -522,7 +550,7 @@ footer {
     }
      
 
-    /* productos vista movil */
+    /* productos vista tablets */
 
     #productos {
         display: grid;
@@ -580,7 +608,25 @@ footer {
         object-fit: contain;
         height: 320px;
     } 
-    /* categorias vista movil */
+
+#adicionales {
+    display: grid;
+    grid-template-areas:
+        "adic adic"
+        "ferrero choco"
+        "vinos peluche"
+        "globo globonum";
+    height: 100%;
+    grid-auto-rows: 0fr 3fr 3fr 3fr;
+    background: white;
+    grid-template-columns: 200% 200%;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+    /* categorias vista tablets */
     
 .navmenu {
         grid-area: nav;
@@ -869,6 +915,9 @@ a {
     transition: all 0.6s;
     border-radius: 8px;
 
+}
+.category_list .ct_item-active { 
+    background-color: rgba(133, 17, 75, 0.829);
 }
 
 }
