@@ -91,9 +91,7 @@ header {
 		background: local;
 	}
 }
-.btn_menu {
-	display: none;
-}
+
 .social-bar {
 	display: flex;
 	left: 0;
@@ -157,12 +155,14 @@ nav {
 	margin-top: 1%;
 }
 .category_list {
+	
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	scroll-snap-align: center;
 	margin: 0%;
-	
+	list-style: none;
+
     .category_item {
 		display: block;
 		width: auto;
@@ -176,6 +176,7 @@ nav {
 		transition: all 0.6s;
 		box-sizing: border-box;
 		
+		
         &:hover {
 			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
@@ -185,6 +186,18 @@ nav {
     .ct_item-active {
 		background-color: rgba(133, 17, 75, 0.829);
 	}
+}
+
+.menubtn{
+	font-size: 30px;
+	float: left;
+	line-height: 100px;
+	cursor: pointer;
+	display: none;
+	margin: 20px;
+}
+#abrirmenu {
+	display: none;
 }
 
 #productos {

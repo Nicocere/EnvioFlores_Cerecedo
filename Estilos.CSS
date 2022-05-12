@@ -227,10 +227,19 @@ header {
     background-color: rgba(133, 17, 75, 0.829);
 }
 
+/* MENU AGREGADO */
 
-/* OCACIONES */
-
-
+.menubtn{
+	font-size: 30px;
+	float: left;
+	line-height: 100px;
+	cursor: pointer;
+	display: none;
+	margin: 20px;
+}
+#abrirmenu {
+	display: none;
+}
 
 
         /* PRODUCTOS */
@@ -865,6 +874,19 @@ a {
     /* ================ CATEGORIA VISTA CELULAR ==============*/
 
 
+    .menubtn{ 
+        display: block;
+        cursor: pointer;
+    
+    }
+
+    #abrirmenu:checked ~ .category_list {
+        left: 0%;
+        background: red;
+    }
+
+
+
     #categoria {
         display: flex;
         flex-direction: column;
@@ -878,9 +900,12 @@ a {
         display: initial;
         flex-direction: row;
         width: 100%;
-        scroll-snap-align: center;
+        position: fixed;
+        left: -100%;
+        transition: all .8s;
      }
     
+
     
     
     .category_list .category_item{
