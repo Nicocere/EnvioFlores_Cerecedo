@@ -14,10 +14,12 @@
         <!-- ----- link de font asewome para menu responsive ------------>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        
+           <!-- ----- link de font asewome para menu responsive ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
         <!-- LINK DE SASS -->
-        <link rel="stylesheet" href="../../Estilos.CSS">
+        <link rel="stylesheet" href="../../CSS/destino.css">
         <link rel="stylesheet" href="../../Font.css">
 
 
@@ -29,7 +31,8 @@
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
-            </style>
+            @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        </style>
 
     </head>
 
@@ -41,14 +44,14 @@
 
     <header class="border">
         <nav class="secciondearriba">
-            <div class="Seccion"><a href="../../index.html"><li>NOSOTROS</li></div></a> 
-            <div class="Seccion"><li><a href="../../Paginas/Pagina_header/fechas_especiales.html"> Fechas Especiales </a></li></div>
+            <div class="Seccion"><a href="../../index.html"><li>NOSOTROS</div></a> 
+            <div class="Seccion"><li><a href="../../Paginas/Pagina_header/fechas_especiales.html"> Fechas Especiales </a></div>
 
-            <div class="Seccion"><li><a href="../../paginas/Pagina_header/Costos_envio.html">Costos de envio</a></li></div>
+            <div class="Seccion"><li><a href="../../paginas/Pagina_header/Costos_envio.html">Costos de envio</a></div>
 
-            <div class="Seccion"> <li><a href="../../Paginas/Pagina_header/Como_comprar.html">¿Como comprar?</a></li></div>
+            <div class="Seccion"> <li><a href="../../Paginas/Pagina_header/Como_comprar.html">¿Como comprar?</a></div>
 
-            <div class="Seccion"> <li><a href="../../Paginas/Pagina_header/Registrate.html"> Registrate</a></li> </div>
+            <div class="Seccion"> <li><a href="../../Paginas/Pagina_header/Registrate.html"> Registrate</a> </div>
             
                 <span class="btn_menu">
                     <i class="bi bi-list"></i>
@@ -101,40 +104,35 @@
 
             <!-- BUSCADORES Y SELECCION DE ENTREGA -->
 
-    <div id="buscadores">
-        <form class="form"  action="">
-            <input type="text" name="Buscar Producto" placeholder="Buscar Producto">
-
-                <span>Capital Federal</span>
-               <input type="radio" name="zona de envio" >
-               <span>Gran Buenos Aires</span>
-               <input type="Radio" name="zona de envio">
-               <span>Interior del Pais</span>
-               <input type="Radio" name="zona de envio">
-
-        </form>
-
-    </div>
+            <div id="buscadores">
+                <form class="form"  action="search">
+                <input type="text" name="Buscar Producto" placeholder="Buscar Producto">
+                <span>Capital Federal
+                <input type="radio" name="zona de envio" ></span>
+                <span>Gran Buenos Aires
+                <input type="Radio" name="zona de envio"></span>
+                <span>Interior del Pais
+                <input type="Radio" name="zona de envio"></span>
+                </form>
+            </div>
 
                     <!-- CATEGORIAS -->
 
-    <nav class="NavMenu">Elija una Categoria
-
+    <nav class="NavMenu"><h1 class="elegircategoria">Elija una Categoria</h1>
+    
         <section id="Categoria"></section>
             <input type="checkbox" id="abrirmenu">
             <label for="abrirmenu" class="menubtn">
                 <i class="fa-solid fa-bars"></i>
             </label>
-
-    
-            <div class="category_list">
-                <a href="../../index.html" class="category_item " category="TODOS"> TODOS</a>
-                <a href="rosas.html" class="Category_item ct_item-active" category="Rosas"> Rosas</a>
-                <a href="floreros.html" class="Category_item" category="Floreros"> Floreros</a>
-                <a href="canastas.html" class="Category_item" category="Canastas"> Canastas</a>
-                <a href="comestibles.html" class="Category_item" category="Comestibles"> Comestibles</a>
-                <a href="desayunos.html" class="Category_item" category="Desayunos"> Desayunos</a>
-            </div>
+            <ul class="category_list">
+               <li><a href="../../index.html" class="category_item " category="TODOS"> TODOS</a></li>
+                <li><a href="rosas.html" class="Category_item ct_item-active" category="Rosas"> Rosas</a></li>
+                <li><a href="floreros.html" class="Category_item" category="Floreros"> Floreros</a></li>
+                <li><a href="canastas.html" class="Category_item" category="Canastas"> Canastas</a></li>
+                <li><a href="comestibles.html" class="Category_item" category="Comestibles"> Comestibles</a></li>
+                <li><a href="desayunos.html" class="Category_item" category="Desayunos"> Desayunos</a></li>
+            </ul>
     
         </section>
     

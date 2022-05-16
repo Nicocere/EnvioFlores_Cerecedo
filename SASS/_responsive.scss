@@ -88,9 +88,9 @@
 		grid-area: productos;
 		justify-items: center;
 		grid-template-columns: 45% 45%;
-		grid-row-gap: 10px;
+		grid-row-gap: 20px;
 		padding-top: 0.5%;
-		grid-auto-rows: 450px;
+		grid-auto-rows: 370px;
 		object-fit: contain;
 		width: inherit;
 	}
@@ -102,11 +102,11 @@
 	}
 	.product-item {
 		width: fit-content;
-		background-color: rgba(250, 16, 16, 0.075);
+		background: linear-gradient(45deg, rgb(125 40 189), rgb(255 0 141));
 		margin-bottom: 10%;
 		transition: all .6s;
 		width: inherit;
-		height: 40vw;
+		height: 370px;
 		display: flex;
 		margin: 1%;
 		object-fit: contain;
@@ -118,18 +118,18 @@
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-			background-color: rgba(46, 2, 13, 0.76);
+			background: linear-gradient(45deg, rgb(125 40 189), rgb(255 0 141));
 			padding-top: 0%;
 			color: #fff;
 			text-align: center;
 			text-decoration: none;
-			height: 450px;
+			height: 370;
 			border-radius: 18px;
 		}
 		img {
 			width: inherit;
 			border-radius: 10px;
-			height: 400px;
+			height: 320px;
 		}
 	}
 	.navmenu {
@@ -172,6 +172,8 @@
 
 @media screen and (max-width: 500px) {
 
+
+
 .secciondearriba {
 	display: none;
 	list-style: none;
@@ -187,6 +189,7 @@
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
+	width: 98%;
 }
 .form {
 	display: flex;
@@ -196,6 +199,14 @@
 	height: fit-content;
 	margin: 0%;
 }
+
+#buscadores {
+    grid-area: buscador;
+    justify-items: stretch;
+    background: linear-gradient(45deg, #00adff45, #ff00ebd1);
+    border: ridge;
+}
+
 header {
 	display: flex;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -245,12 +256,14 @@ header {
 		border-radius: 5px;
 		float: left;
 		padding: 10px;
+		display: none;
 	}
 	.icon-instagram {
 		background: #cc21b0;
 		border-radius: 5px;
 		float: left;
 		padding: 10px;
+		display: none;
 	}
 	.envioflores {
 		text-align: center;
@@ -266,7 +279,7 @@ header {
 		grid-template-columns: 45% 45%;
 		grid-row-gap: 10px;
 		padding-top: 0.5%;
-		grid-auto-rows: 200px;
+		grid-auto-rows: 210px;
 		object-fit: contain;
 		width: inherit;
 		
@@ -279,13 +292,14 @@ header {
 	}
 .product-item {
 		width: fit-content;
-		background-color: rgba(250, 16, 16, 0.075);
+		background: linear-gradient(45deg, rgb(125 40 189), rgb(255 0 141));
 		margin-bottom: 10%;
 		transition: all .6s;
 		width: 95%;
 		display: flex;
 		margin: 1%;
 		border-radius: 15px;
+		height: 190px;
 		&:hover {
 			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
@@ -294,7 +308,7 @@ header {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-			background: linear-gradient(#fbf9fb00, #993668);
+			background: linear-gradient(45deg, rgb(125 40 189), rgb(255 0 141));
 			padding-top: 0%;
 			color: #fff;
 			text-align: center;
@@ -329,74 +343,119 @@ nav {
 		
 }
 
+.elegircategoria {
+    font-size: calc(1.375rem + 1.5vw);
+    color: #2c032c;
+    background: linear-gradient(#ff00a569, #1b011c59);
+    margin: 0;
+    padding: 2%;
+
+}
+
 .menubtn{ 
 	display: block;
-	cursor: pointer;
+    cursor: pointer;
+    margin: 1px;
+    background: linear-gradient(116deg, #4b87f5, rgb(227 38 154));
+    border-radius: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	transition: all .9s;
+	padding: 15px;
+}
+
+#abrirmenu:checked ~ .menubtn{ 
+	border-radius: 18%;
+	padding: 19px;
+	background: linear-gradient(116deg, rgb(143, 7, 91), #206bf7);
+	transition: all 1s;
+}
+.fa-solid, .fas {
+	font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #fff2fc;
+	padding: 5px;
 
 }
 
 #abrirmenu:checked ~ .category_list {
-	right: 0;
-	position: relative;
-	transition: all 0.8s;
-	width: 75%;
+	left: 0;
+	position: fixed;
+	transition: left 0.8s;
+	width: 100%;
+	top: 0;
+	background: linear-gradient(rgb(255, 186, 244), rgb(255, 255, 255));
 }
+
+
 
 .category_list {
 		display: initial;
 		flex-direction: row;
-
+		margin: 0%;
+		top: 0;
 		scroll-snap-align: center;
 		position: fixed;
-		right: -100%;
-		transition: all 0s;
-		top: 30px;
+		left: -100%;
+		transition: all .8s;
+		border-radius: 14px;
+		
 
 		.category_item {
 			display: block;
-			margin-bottom: 15px;
-			background-color: rgba(255, 2, 99, 0.719);
+			margin-bottom: 5px;
+			background: linear-gradient(rgb(233, 95, 217), rgb(255 255 255));
 			text-align: center;
-			text-decoration: solid;
-			color: white;
+			color: rgb(27, 3, 3);
 			transition: all 0.4s;
-			font-size: 16px;
-			font-family: bold;
-			border-radius: 15px;
+			font-size: 55px;
+			font-family: 'Courgette', cursive;
+			height: 100px;
 			&:hover {
 				-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 				box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 			}
 		}
 		.ct_item-active {
-			background-color: rgb(133, 17, 75);
+			background: linear-gradient(rgb(88, 57, 226), rgba(40, 205, 255, 0.815));
 			text-align: center;
 		}
 }
-#ocaciones {
-		display: none;
+
+
+
+.botonescompra{
+	display: flex;
+	flex-direction: column;
+
 }
 #productoseleccionado {
-		display: grid;
-		grid-template-columns: 55%;
-		grid-template-areas: "titulo titulo"
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
         "imagen cantidad"
         "imagen colorrosas";
-		grid-column-gap: 2px;
-		grid-row-gap: 10px;
-		max-width: 100%;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    width: 100%;
+    grid-auto-columns: 50%
 }
 #adicionales {
 		display: flex;
 		background-color: white;
-		flex-direction: column;
+		flex-wrap: wrap;
 		height: auto;
+
 }
 .adic {
 		display: flex;
 		height: fit-content;
 		width: 100%;
 		flex-direction: column;
+		text-align: center;
+		font-family:'Courgette';
 }
 	footer {
 		display: flex;

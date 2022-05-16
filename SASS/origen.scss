@@ -78,7 +78,7 @@ header {
 	background: local;
 	
     &:hover {
-		background-color: rgba(83, 0, 0, 0.63);
+		background-color: rgb(179, 41, 197);
 		border-radius: 10px;
 		transition: all 0.5s;
 		padding: 15px;
@@ -89,46 +89,54 @@ header {
 		text-decoration: none;
 		color: white;
 		background: local;
+		&:hover {
+			background-color: rgb(179, 41, 197);
+			text-decoration: none;
+			color: white;
+		}
 	}
 }
 
 .social-bar {
 	display: flex;
-	left: 0;
-	top: 45%;
+	flex-direction: column;
+	left: -8px;
 	align-items: flex-start;
 	z-index: 100;
 	height: fit-content;
-	position: sticky;
+	position: absolute;
+	float: left;
+	transition: all .5s;
+		
+    &:hover {
+		left: -3px;
+		transition: all .8s;
+	}
 }
 .icon {
 	color: white;
 	text-decoration: none;
-	padding: 1%;
-	display: flex;
-	width: 5%;
+	width: 50px;
 	height: fit-content;
-	margin-left: 1px;
 	transition: all .3s;
+	display: block;
 	
     &:hover {
-		width: 60px;
-		transition: all .3s;
-		border-radius: 25px;
+		width: 75px;
+		transition: all .6s;
+		color: white;
 	}
 }
 .icon-facebook2 {
 	background: #2c0394;
 	color: white;
 	border-radius: 10px;
-	top: 10%;
-	display: flex;
+	padding: 15px;
 }
 .icon-instagram {
 	background: #cc21b0;
 	border-radius: 10px;
-	top: 10%;
-	display: flex;
+	padding: 15px;
 }
 .carousel {
 	text-align: -webkit-center;
@@ -149,6 +157,17 @@ nav {
 .NavMenu {
 	grid-area: nav;
 }
+
+.elegircategoria {
+    font-size: 25px;
+    color: #2c032c;
+    background: linear-gradient(#ff57db, transparent);
+    margin: 0;
+    padding: 2%;
+    border-radius: 10px;
+
+}
+
 #categoria {
 	grid-area: categoria;
 	align-items: center;
@@ -162,29 +181,33 @@ nav {
 	scroll-snap-align: center;
 	margin: 0%;
 	list-style: none;
+	padding: 0px;
+
 
     .category_item {
 		display: block;
 		width: auto;
 		padding: 5%;
-		margin-bottom: 15px;
-		background-color: rgba(255, 2, 44, 0.233);
+		margin-bottom: 10px;
+		margin-top: 5px;
+		background: linear-gradient(rgb(231, 12, 147), rgb(255 173 255 / 0%));
 		text-align: center;
 		text-decoration: solid;
-		color: white;
+		color: black;
 		border-radius: 8px;
 		transition: all 0.6s;
 		box-sizing: border-box;
-		
-		
+		font-family: 'Courgette';
+	
         &:hover {
 			-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 			box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 		}
 	}
-	
+
     .ct_item-active {
-		background-color: rgba(133, 17, 75, 0.829);
+		background: linear-gradient(rgb(53, 108, 211), rgb(141, 194, 201));
+		margin-top: 5px;
 	}
 }
 
@@ -218,32 +241,42 @@ nav {
 }
 .product-item {
 	width: fit-content;
-	background-color: rgb(46 3 13);
+	background: linear-gradient(45deg, rgb(125 40 189), rgb(255 0 141));
 	margin-bottom: 10%;
 	transition: all .6s;
 	border-radius: 8px;
 	
     &:hover {
-		-webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.795);
-		box-shadow: 10px 10px 14px 2px rgba(104, 0, 0, 0.952);
+		-webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.452);
+		box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.418);
+		text-decoration: none;
+		color: white;
 	}
 	
     a {
 		display: block;
 		width: 100%;
 		padding: 0;
-		background-color: rgba(46, 2, 13, 0.76);
+		background: linear-gradient(45deg, rgb(125 40 189), rgb(255 0 141));
 		color: #fff;
 		text-align: center;
 		text-decoration: none;
 		border-radius: 10px;
+		height: 350px;
+		&:hover{
+			text-decoration: none;
+			color: white;
+		}
 	}
 	
     img {
 		width: 100%;
 		height: 300px;
+		border-radius: 10px;
 	}
 }
+
+
 
 #productoseleccionado {
 	display: grid;
@@ -253,7 +286,7 @@ nav {
     "imagen colorrosas ";
 	grid-template-columns: 40%;
 	grid-template-rows: 20;
-	grid-column-gap: 2px;
+	grid-column-gap: 20px;
 	grid-row-gap: 10px;
 	max-width: 100%;
 }
@@ -269,21 +302,56 @@ nav {
 .imagenproducto {
 	img {
 		grid-area: imagen;
-		width: 80%;
+		width: 100%;
 	}
 }
 
+.botonescompra{
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	width: 200px;
+
+}
 .btnfinalizar {
-	background-color: rgb(226, 87, 134);
+	background-color: rgb(188, 0, 245);
 	border-radius: 20rem;
-	padding: 1.5%;
+	padding: 2.5%;
 	border: 2px solid black;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	transition: all .5s;
+	margin-top: 2%;
+	width: 90%;
+	&:hover {
+		-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		text-decoration: none;
+		color: white;
+		padding: 2%;
+		background-color: rgb(217, 94, 255);
+	}
 }
 .btnseguir {
-	background-color: rgb(252, 113, 217);
+	background-color: rgb(255, 0, 191);
 	border-radius: 20rem;
-	padding: 1.5%;
+	padding: 2.5%;
 	border: 2px solid black;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	transition: all .5s;
+	margin-top: 2%;
+	width: 90%;
+	&:hover {
+		-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+		color: white;
+		text-decoration: none;
+		padding: 2%;
+		background-color: rgb(209, 31, 31);
+	}
 }
 
 #adicionales {

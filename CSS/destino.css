@@ -73,7 +73,7 @@ header {
   background: local;
 }
 .seccion:hover {
-  background-color: rgba(83, 0, 0, 0.63);
+  background-color: rgb(179, 41, 197);
   border-radius: 10px;
   transition: all 0.5s;
   padding: 15px;
@@ -85,46 +85,53 @@ header {
   color: white;
   background: local;
 }
+.seccion a:hover {
+  background-color: rgb(179, 41, 197);
+  text-decoration: none;
+  color: white;
+}
 
 .social-bar {
   display: flex;
-  left: 0;
-  top: 45%;
+  flex-direction: column;
+  left: -8px;
   align-items: flex-start;
   z-index: 100;
   height: fit-content;
-  position: sticky;
+  position: absolute;
+  float: left;
+  transition: all 0.5s;
+}
+.social-bar:hover {
+  left: -3px;
+  transition: all 0.8s;
 }
 
 .icon {
   color: white;
   text-decoration: none;
-  padding: 1%;
-  display: flex;
-  width: 5%;
+  width: 50px;
   height: fit-content;
-  margin-left: 1px;
   transition: all 0.3s;
+  display: block;
 }
 .icon:hover {
-  width: 60px;
-  transition: all 0.3s;
-  border-radius: 25px;
+  width: 75px;
+  transition: all 0.6s;
+  color: white;
 }
 
 .icon-facebook2 {
   background: #2c0394;
   color: white;
   border-radius: 10px;
-  top: 10%;
-  display: flex;
+  padding: 15px;
 }
 
 .icon-instagram {
   background: #cc21b0;
   border-radius: 10px;
-  top: 10%;
-  display: flex;
+  padding: 15px;
 }
 
 .carousel {
@@ -151,6 +158,15 @@ nav {
   grid-area: nav;
 }
 
+.elegircategoria {
+  font-size: 25px;
+  color: #2c032c;
+  background: linear-gradient(#ff57db, transparent);
+  margin: 0;
+  padding: 2%;
+  border-radius: 10px;
+}
+
 #categoria {
   grid-area: categoria;
   align-items: center;
@@ -164,26 +180,30 @@ nav {
   scroll-snap-align: center;
   margin: 0%;
   list-style: none;
+  padding: 0px;
 }
 .category_list .category_item {
   display: block;
   width: auto;
   padding: 5%;
-  margin-bottom: 15px;
-  background-color: rgba(255, 2, 44, 0.233);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  background: linear-gradient(rgb(231, 12, 147), rgba(255, 173, 255, 0));
   text-align: center;
   text-decoration: solid;
-  color: white;
+  color: black;
   border-radius: 8px;
   transition: all 0.6s;
   box-sizing: border-box;
+  font-family: "Courgette";
 }
 .category_list .category_item:hover {
   -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
   box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 .category_list .ct_item-active {
-  background-color: rgba(133, 17, 75, 0.829);
+  background: linear-gradient(rgb(53, 108, 211), rgb(141, 194, 201));
+  margin-top: 5px;
 }
 
 .menubtn {
@@ -218,28 +238,36 @@ nav {
 
 .product-item {
   width: fit-content;
-  background-color: rgb(46, 3, 13);
+  background: linear-gradient(45deg, rgb(125, 40, 189), rgb(255, 0, 141));
   margin-bottom: 10%;
   transition: all 0.6s;
   border-radius: 8px;
 }
 .product-item:hover {
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.795);
-  box-shadow: 10px 10px 14px 2px rgba(104, 0, 0, 0.952);
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.452);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.418);
+  text-decoration: none;
+  color: white;
 }
 .product-item a {
   display: block;
   width: 100%;
   padding: 0;
-  background-color: rgba(46, 2, 13, 0.76);
+  background: linear-gradient(45deg, rgb(125, 40, 189), rgb(255, 0, 141));
   color: #fff;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
+  height: 350px;
+}
+.product-item a:hover {
+  text-decoration: none;
+  color: white;
 }
 .product-item img {
   width: 100%;
   height: 300px;
+  border-radius: 10px;
 }
 
 #productoseleccionado {
@@ -247,7 +275,7 @@ nav {
   grid-template-areas: "titulo titulo " "imagen cantidad " "imagen colorrosas ";
   grid-template-columns: 40%;
   grid-template-rows: 20;
-  grid-column-gap: 2px;
+  grid-column-gap: 20px;
   grid-row-gap: 10px;
   max-width: 100%;
 }
@@ -266,21 +294,56 @@ nav {
 
 .imagenproducto img {
   grid-area: imagen;
-  width: 80%;
+  width: 100%;
+}
+
+.botonescompra {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 200px;
 }
 
 .btnfinalizar {
-  background-color: rgb(226, 87, 134);
+  background-color: rgb(188, 0, 245);
   border-radius: 20rem;
-  padding: 1.5%;
+  padding: 2.5%;
   border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  margin-top: 2%;
+  width: 90%;
+}
+.btnfinalizar:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  text-decoration: none;
+  color: white;
+  padding: 2%;
+  background-color: rgb(217, 94, 255);
 }
 
 .btnseguir {
-  background-color: rgb(252, 113, 217);
+  background-color: rgb(255, 0, 191);
   border-radius: 20rem;
-  padding: 1.5%;
+  padding: 2.5%;
   border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  margin-top: 2%;
+  width: 90%;
+}
+.btnseguir:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  color: white;
+  text-decoration: none;
+  padding: 2%;
+  background-color: rgb(209, 31, 31);
 }
 
 #adicionales {
@@ -453,9 +516,9 @@ footer {
     grid-area: productos;
     justify-items: center;
     grid-template-columns: 45% 45%;
-    grid-row-gap: 10px;
+    grid-row-gap: 20px;
     padding-top: 0.5%;
-    grid-auto-rows: 450px;
+    grid-auto-rows: 370px;
     object-fit: contain;
     width: inherit;
   }
@@ -469,11 +532,11 @@ footer {
 
   .product-item {
     width: fit-content;
-    background-color: rgba(250, 16, 16, 0.075);
+    background: linear-gradient(45deg, rgb(125, 40, 189), rgb(255, 0, 141));
     margin-bottom: 10%;
     transition: all 0.6s;
     width: inherit;
-    height: 40vw;
+    height: 370px;
     display: flex;
     margin: 1%;
     object-fit: contain;
@@ -486,18 +549,18 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgba(46, 2, 13, 0.76);
+    background: linear-gradient(45deg, rgb(125, 40, 189), rgb(255, 0, 141));
     padding-top: 0%;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    height: 450px;
+    height: 370;
     border-radius: 18px;
   }
   .product-item img {
     width: inherit;
     border-radius: 10px;
-    height: 400px;
+    height: 320px;
   }
 
   .navmenu {
@@ -554,6 +617,7 @@ footer {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    width: 98%;
   }
 
   .form {
@@ -563,6 +627,13 @@ footer {
     width: 100%;
     height: fit-content;
     margin: 0%;
+  }
+
+  #buscadores {
+    grid-area: buscador;
+    justify-items: stretch;
+    background: linear-gradient(45deg, rgba(0, 173, 255, 0.2705882353), rgba(255, 0, 235, 0.8196078431));
+    border: ridge;
   }
 
   header {
@@ -618,6 +689,7 @@ footer {
     border-radius: 5px;
     float: left;
     padding: 10px;
+    display: none;
   }
 
   .icon-instagram {
@@ -625,6 +697,7 @@ footer {
     border-radius: 5px;
     float: left;
     padding: 10px;
+    display: none;
   }
 
   .envioflores {
@@ -642,7 +715,7 @@ footer {
     grid-template-columns: 45% 45%;
     grid-row-gap: 10px;
     padding-top: 0.5%;
-    grid-auto-rows: 200px;
+    grid-auto-rows: 210px;
     object-fit: contain;
     width: inherit;
   }
@@ -656,13 +729,14 @@ footer {
 
   .product-item {
     width: fit-content;
-    background-color: rgba(250, 16, 16, 0.075);
+    background: linear-gradient(45deg, rgb(125, 40, 189), rgb(255, 0, 141));
     margin-bottom: 10%;
     transition: all 0.6s;
     width: 95%;
     display: flex;
     margin: 1%;
     border-radius: 15px;
+    height: 190px;
   }
   .product-item:hover {
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
@@ -672,7 +746,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(rgba(251, 249, 251, 0), #993668);
+    background: linear-gradient(45deg, rgb(125, 40, 189), rgb(255, 0, 141));
     padding-top: 0%;
     color: #fff;
     text-align: center;
@@ -707,65 +781,100 @@ footer {
     display: flex;
   }
 
+  .elegircategoria {
+    font-size: calc(1.375rem + 1.5vw);
+    color: #2c032c;
+    background: linear-gradient(rgba(255, 0, 165, 0.4117647059), rgba(27, 1, 28, 0.3490196078));
+    margin: 0;
+    padding: 2%;
+  }
+
   .menubtn {
     display: block;
     cursor: pointer;
+    margin: 1px;
+    background: linear-gradient(116deg, #4b87f5, rgb(227, 38, 154));
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.9s;
+    padding: 15px;
+  }
+
+  #abrirmenu:checked ~ .menubtn {
+    border-radius: 18%;
+    padding: 19px;
+    background: linear-gradient(116deg, rgb(143, 7, 91), #206bf7);
+    transition: all 1s;
+  }
+
+  .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #fff2fc;
+    padding: 5px;
   }
 
   #abrirmenu:checked ~ .category_list {
-    right: 0;
-    position: relative;
-    transition: all 0.8s;
-    width: 75%;
+    left: 0;
+    position: fixed;
+    transition: left 0.8s;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(rgb(255, 186, 244), rgb(255, 255, 255));
   }
 
   .category_list {
     display: initial;
     flex-direction: row;
+    margin: 0%;
+    top: 0;
     scroll-snap-align: center;
     position: fixed;
-    right: -100%;
-    transition: all 0s;
-    top: 30px;
+    left: -100%;
+    transition: all 0.8s;
+    border-radius: 14px;
   }
   .category_list .category_item {
     display: block;
-    margin-bottom: 15px;
-    background-color: rgba(255, 2, 99, 0.719);
+    margin-bottom: 5px;
+    background: linear-gradient(rgb(233, 95, 217), rgb(255, 255, 255));
     text-align: center;
-    text-decoration: solid;
-    color: white;
+    color: rgb(27, 3, 3);
     transition: all 0.4s;
-    font-size: 16px;
-    font-family: bold;
-    border-radius: 15px;
+    font-size: 55px;
+    font-family: "Courgette", cursive;
+    height: 100px;
   }
   .category_list .category_item:hover {
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
   }
   .category_list .ct_item-active {
-    background-color: rgb(133, 17, 75);
+    background: linear-gradient(rgb(88, 57, 226), rgba(40, 205, 255, 0.815));
     text-align: center;
   }
 
-  #ocaciones {
-    display: none;
+  .botonescompra {
+    display: flex;
+    flex-direction: column;
   }
 
   #productoseleccionado {
     display: grid;
-    grid-template-columns: 55%;
     grid-template-areas: "titulo titulo" "imagen cantidad" "imagen colorrosas";
-    grid-column-gap: 2px;
+    grid-column-gap: 20px;
     grid-row-gap: 10px;
-    max-width: 100%;
+    width: 100%;
+    grid-auto-columns: 50%;
   }
 
   #adicionales {
     display: flex;
     background-color: white;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
   }
 
@@ -774,6 +883,8 @@ footer {
     height: fit-content;
     width: 100%;
     flex-direction: column;
+    text-align: center;
+    font-family: "Courgette";
   }
 
   footer {

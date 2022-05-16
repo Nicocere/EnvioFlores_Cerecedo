@@ -16,11 +16,14 @@
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <!-- ----- link de font asewome para menu responsive ------------>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <link rel="stylesheet" href="../../Estilos.CSS">
+   <link rel="stylesheet" href="../../CSS/destino.css">
    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
-      </style>
+    @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    </style>
 
  </head>
 
@@ -87,30 +90,33 @@
       <!-- BUSCADORES Y SELECCION DE ENTREGA -->
 
     <div id="buscadores">
-        <form class="form"  action="">
-        <input type="text" name="Buscar Producto" placeholder="Buscar Producto">
-        <span>Capital Federal</span>
-        <input type="radio" name="zona de envio" >
-        <span>Gran Buenos Aires</span>
-        <input type="Radio" name="zona de envio">
-        <span>Interior del Pais</span>
-        <input type="Radio" name="zona de envio">
-
+        <form class="form"  action="search">
+            <input type="text" name="Buscar Producto" placeholder="Buscar Producto">
+            <span>Capital Federal
+            <input type="radio" name="zona de envio" ></span>
+            <span>Gran Buenos Aires
+            <input type="Radio" name="zona de envio"></span>
+            <span>Interior del Pais
+            <input type="Radio" name="zona de envio"></span>
         </form>
-
     </div>
 
          <!-- CATEGORIAS -->
-    <nav class="NavMenu">Elija una Categoria
-    <section id="Categoria" class="border">
-        <div class="category_list">
-            <a href="../../index.html" class="category_item ct_item-active" category="TODOS"> TODOS</a>
-            <a href="../Pagina_Categorias/rosas.html" class="Category_item" category="Rosas"> Rosas</a>
-            <a href="../Pagina_Categorias/floreros.html" class="Category_item" category="Floreros"> Floreros</a>
-            <a href="../Pagina_Categorias/canastas.html" class="Category_item" category="Canastas"> Canastas</a>
-            <a href="../Pagina_Categorias/comestibles.html" class="Category_item" category="Comestibles"> Comestibles</a>
-            <a href="#" class="Category_item" category="Desayunos"> Desayunos</a>
-        </div>
+    <nav class="NavMenu">
+    
+    <section id="Categoria" class="border"></section>   
+        <input type="checkbox" id="abrirmenu">
+        <label for="abrirmenu" class="menubtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="category_list">
+            <li><a href="../../index.html" class="category_item ct_item-active" category="TODOS">TODOS</a></li>
+            <li><a href="../Pagina_Categorias/rosas.html" class="Category_item" category="Rosas"> Rosas</a></li>
+            <li><a href="../Pagina_Categorias/floreros.html" class="Category_item" category="Floreros"> Floreros</a></li>
+            <li><a href="../Pagina_Categorias/canastas.html" class="Category_item" category="Canastas"> Canastas</a></li>
+            <li><a href="../Pagina_Categorias/comestibles.html" class="Category_item" category="Comestibles"> Comestibles</a></li>
+            <li><a href="../Pagina_Categorias/desayunos.html" class="Category_item" category="Desayunos"> Desayunos</a></li>
+        </ul>
     </section>
     </nav>
 
