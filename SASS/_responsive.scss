@@ -360,10 +360,10 @@ nav {
     border-radius: 50%;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 1000;
 	transition: all .9s;
-	padding: 15px;
+	padding: 8px;
 }
 
 #abrirmenu:checked ~ .menubtn{ 
@@ -376,14 +376,14 @@ nav {
 	font-family: "Font Awesome 6 Free";
     font-weight: 900;
     color: #fff2fc;
-	padding: 5px;
+	padding: 3px;
 
 }
 
 #abrirmenu:checked ~ .category_list {
-	left: 0;
+	right: 0;
 	position: fixed;
-	transition: left 0.8s;
+	transition: right 0.8s;
 	width: 100%;
 	top: 0;
 	background: linear-gradient(rgb(255, 186, 244), rgb(255, 255, 255));
@@ -398,7 +398,7 @@ nav {
 		top: 0;
 		scroll-snap-align: center;
 		position: fixed;
-		left: -100%;
+		right: -100%;
 		transition: all .8s;
 		border-radius: 14px;
 		
