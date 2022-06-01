@@ -25,6 +25,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
     </style>
 
+    <!-- LINK DE JAVASCRIPT -->
+    <script src="../../script.js"></script>
+
  </head>
 
  <!-- BODY  -->
@@ -83,6 +86,11 @@
        </button>
         </div>
 
+        <div id="comprar">
+          <button id="checkout" class="button-checkout" onclick="pay()"> Pagar </button>
+
+        </div>
+
         <!-- Fin carrusel -->
  </header>
 
@@ -132,6 +140,8 @@
 
         <!-- opciones de productos -->
         <div class="opcionesproducto">
+            
+          <h1>$5.500</h1>
 
             <form class="CANTIDADROSAS">
             <select name="Cantidad de Rosas" id="Cantidad de rosas"> 
@@ -156,7 +166,7 @@
 
             <div class="botonescompra">
             
-            <a  class="btnseguir" href="../../index.html"> Seguir Comprando</a>
+            <button class="button-add" onclick="add('caja_rosasdiamante_ferrero', 5500)"> Agregar </button>
 
             <a class="btnfinalizar" href="../finalizarcompra.html">Finalizar Compra</a>
             </div>  

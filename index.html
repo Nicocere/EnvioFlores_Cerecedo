@@ -32,7 +32,12 @@
 
     <!------- LINK DE SITEMAP -------->
     <link rel="stylesheet" href="sitemap.xml">
-    
+
+    <!-- LINK DE JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </head>
 
     <!----------- BODY  ----------->   
@@ -85,6 +90,11 @@
         </button>
         </div>
 
+        <div id="comprar">
+            <button id="checkout" class="button-checkout" onclick="pay()"><i class='fas fa-shopping-cart'></i> </button>
+
+
+        </div>
             <!-------------- Fin carrusel ----------------->
 
     </header>
@@ -130,32 +140,61 @@
     <div class="product-item" category="Rosas">
         <a href="Paginas\Pagina_productos/CajFerRosDiam.HTML">
             <img src="imagenes/PRODUCTOS/caja_rosasdiamante_ferrero.jpg" alt="Caja Rosas Diamante con Ferrero Rocher" >
-            Caja Rosas Diamante con Ferrero Rocher</a>
+            Caja Rosas Diamante con Ferrero Rocher
+            <h3>$5.500</h3>
+        </a>
+            <button class="button-add" onclick="add('caja_rosasdiamante_ferrero', 5500)"> Agregar </button>
     </div>
+
+
     <div class="product-item" category="Rosas">
         <a href="Paginas/Pagina_productos/Caj18RosFer.html">
             <img src="imagenes/PRODUCTOS/Caj18RosFer.jpg" alt="Caja 18 Rosas Ferrero" >
-            Caja 18 Rosas Ferrero</a>
+            Caja 18 Rosas Ferrero
+            <h3>$6.500</h3>
+        </a>
+            
+            <button class="button-add" onclick="add('Caj18RosFer', 6500)"> Agregar </button>
+        
     </div>
     <div class="product-item" category="Rosas">
         <a href="Paginas/Pagina_productos/Caj25Rosas.html">
             <img src="imagenes/PRODUCTOS/Caj25ROS_ROSADAS.jpg" alt="caja 25 rosas rosadas" >
-            Caja 25 ROSAS ROSADAS</a>
+            Caja 25 ROSAS ROSADAS
+            <h3>$10.000</h3>
+            </a>
+            <button class="button-add" onclick="add('Caj25ROS_ROSADAS', 10000)"> Agregar </button>
+        
     </div>
+
     <div class="product-item" category="Rosas">
         <a href="Paginas/Pagina_productos/CoraFerRosas.html">
             <img src="imagenes/PRODUCTOS/corazon_ferrero_Rosas.jpg" alt="corazon de rosas y ferrero rocher" >
-             Corazon de Rosas Y Ferrero</a>
+             Corazon de Rosas Y Ferrero
+             <h3>$8.000</h3>
+             </a>
+             <button class="button-add" onclick="add('corazon_ferrero_Rosas', 8000)"> Agregar </button>
+            
     </div>
+
     <div class="product-item" category="Rosas">
         <a href="Paginas/Pagina_productos/Caj50RosFer.html">
             <img src="imagenes/PRODUCTOS/Caj50RosFer.jpg" alt="caja de 50 rosas con ferrero rocher" >
-            Caja 50 rosas FERRERO ABIERTO</a>
+            Caja 50 rosas FERRERO ABIERTO
+            <h3>$20.500</h3>
+            </a>
+            <button class="button-add" onclick="add('Caj50RosFer', 20500)"> Agregar </button>
+        
     </div>
+
     <div class="product-item" category="Rosas">
         <a href="Paginas/Pagina_productos/MinCajRosPel.html">
             <img src="imagenes/PRODUCTOS/mini_Caja_rosas_peluche.jpg" alt="mini caja rosas con peluche" >
-            MINI CAJA ROSAS PELUCHE</a>
+            MINI CAJA ROSAS PELUCHE
+            <h3>$3.500</h3>
+            </a>
+            <button class="button-add" onclick="add('mini_Caja_rosas_peluche', 3500)"> Agregar </button>
+        
     </div>
 
     <!---------------------- FLOREROS -------------------------->
@@ -163,42 +202,66 @@
     <div class="product-item" category="Floreros">
         <a href="Paginas/Pagina_productos/FloRosLilGer.html">
             <img src="imagenes/PRODUCTOS/florero_rosas_gerberas_lilium.jpg" alt="florero con rosas, lilium y gerberas" >
-            Florero con Rosas, Lilium y Gerberas</a>
+            Florero con Rosas, Lilium y Gerberas
+            <h3>$4.500</h3>
+            </a>
+            <button class="button-add" onclick="add('florero_rosas_gerberas_lilium', 4500)"> Agregar </button>
+        
     </div>
+
     <div class="product-item" category="Floreros">
         <a href="Paginas/Pagina_productos/FloRosItaliano.html">
             <img src="imagenes/PRODUCTOS/florero_imperial_rosas.jpg" alt="Florero con rosas en papel italiano" >
-            Florero con Rosas Italiano</a>
+            Florero con Rosas Italiano
+            <h3>$6.000</h3>
+            </a>
+            <button class="button-add" onclick="add('florero_imperial_rosas', 6000)"> Agregar </button>
+        
     </div>
+
+
     <div class="product-item" category="Floreros">
         <a href="Paginas/Pagina_productos/FloRosRosadas.html">
             <img src="imagenes/PRODUCTOS/florero_rosas_rosadas.jpg" alt="florero con rosas rosadas" >
-            Florero Rosas Rosadas</a>
+            Florero Rosas Rosadas
+            <h3>$5.500</h3>
+            </a>
+            <button class="button-add"onclick="add('florero_rosas_rosadas', 5500)"> Agregar </button>
+        
     </div>
+
     <div class="product-item" category="Floreros">
         <a href="#"> <img src="imagenes/PRODUCTOS/florero_lishiantus.jpg" alt="florero con lisianthus Premium" >
-        Florero Lisianthus Premium</a>
+        Florero Lisianthus Premium
+        </a>
     </div>
+
+
+    <!--    PRODUCTOS SIN LINK AUN -->
     <div class="product-item" category="Floreros">
       <a href="#">
                 <img src="imagenes/PRODUCTOS/florero_rosas_amarillas.jpg" alt="florero rosas amarillas" >
         Florero Rosas Amarillas</a>
     </div>
+
     <div class="product-item" category="Floreros">
       <a href="#">
                 <img src="imagenes/PRODUCTOS/exquisito_florero.jpg" alt="exquisito florero" >
          Exquisito Florero</a>
     </div>
+
     <div class="product-item" category="Floreros">
       <a href="#">
                 <img src="imagenes/PRODUCTOS/florero_gerberas.jpg" alt="florero con gerberas" >
         Florero Gerberas</a>
     </div>
+
     <div class="product-item" category="Floreros">
       <a href="#">
                 <img src="imagenes/PRODUCTOS/Florero_6_lilium.jpg" alt="florero de 6 liliums " >
         Florero de 6 Liliums</a>
     </div>
+
     <div class="product-item" category="Floreros">
       <a href="#">
                 <img src="imagenes/PRODUCTOS/florero_rosas_astromelias.jpg" alt="florero con rosas y astromelias" >
