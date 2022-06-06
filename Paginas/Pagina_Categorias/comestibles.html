@@ -30,6 +30,11 @@
           @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
       </style>
+                  <!-- LINK DE JAVASCRIPT -->
+    <script src="../../script.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
     </head>
 
 
@@ -93,7 +98,11 @@
 
               <!-- Fin carrusel -->
 
-
+              <div id="comprar">
+                <button id="checkout" class="button-checkout" onclick="pay()"><i class='fas fa-shopping-cart'></i> </button>
+    
+    
+            </div>
 
     </header>
 
@@ -150,8 +159,11 @@
                <div class="product-item" category="Comestibles">
                 <a href="#">
                   <img src="../../imagenes/PRODUCTOS/bandeja_te_quiero.jpg" alt="bandeja te quiero" >
-                Bandeja Te Quiero</a>
-            </div>
+           Bandeja Te Quiero
+    <h3>$4.500</h3>
+    </a>
+    <button class="button-add"onclick="add('Bandeja comestible te quiero', 4500)"> Agregar </button>
+    </div>
 
 
     </section>

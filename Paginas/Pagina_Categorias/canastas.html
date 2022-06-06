@@ -30,7 +30,11 @@
             @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
         </style>
+            <!-- LINK DE JAVASCRIPT -->
+    <script src="../../script.js"></script>
 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
     </head>
 
 
@@ -96,6 +100,11 @@
 
               <!-- Fin carrusel -->
 
+              <div id="comprar">
+                <button id="checkout" class="button-checkout" onclick="pay()"><i class='fas fa-shopping-cart'></i> </button>
+    
+    
+            </div>
 
 
     </header>
@@ -143,28 +152,53 @@
 <section id="Productos" class="ListadeProductos">
     <div class="product-item" category="Canastas">
         <a href="#"><img src="../../imagenes/PRODUCTOS/canasta_24_rosas_con_bombones.jpg" alt="canasta 24 rosas con bombones" >
-        Canasta de 24 rosas con BOMBONES</a>
-    </div>
+            Canasta de 24 rosas con BOMBONES
+            <h3>$7.000</h3>
+            </a>
+            <button class="button-add"onclick="add('canasta con 24 rosas y Bombones', 7000)"> Agregar </button>
+            </div>
+
     <div class="product-item" category="Canastas">
         <a href="#"><img src="../../imagenes/PRODUCTOS/canasta_24_rosas_sin_bombones.jpg" alt="canasta de 24 rosas sin bombones" >
-        Canasta de 24 rosas SIN BOMBONES</a>
-    </div>
+            Canasta de 24 rosas SIN BOMBONES
+            <h3>$6.000</h3>
+            </a>
+            <button class="button-add"onclick="add('canasta de 24 rosas SIN bombones', 6000)"> Agregar </button>
+            </div>
+        
+
     <div class="product-item" category="Canastas">
         <a href="#"><img src="../../imagenes/PRODUCTOS/canasta_floresblancas_Estacion.jpg" alt="canasta de flores blancas de estacion" >
-        Canasta de Flores Blancas de Estacion</a>
+        Canasta de Flores Blancas de Estacion
+    <h3>$6.500</h3>
+    </a>
+    <button class="button-add"onclick="add('canasta de flores blancas de estacion', 6500)"> Agregar </button>
     </div>
+
     <div class="product-item" category="Canastas">
         <a href="#"><img src="../../imagenes/PRODUCTOS/canasta_gerberas_rosas.jpg" alt="canasta gerberas y rosas" >
-        Canasta de Gerberas y Rosas</a>
+         Canasta de Gerberas y Rosas
+    <h3>$5.990</h3>
+    </a>
+    <button class="button-add"onclick="add('canasta de gerberas y rosas', 5990)"> Agregar </button>
     </div>
+
     <div class="product-item" category="Canastas">
         <a href="#"><img src="../../imagenes/PRODUCTOS/canasta_rosas_lilium.jpg" alt="canasta de rosas y lilium" >
-        Canasta Rosas y Lilium</a>
+           Canasta Rosas y Lilium
+        <h3>$6.000</h3>
+        </a>
+        <button class="button-add"onclick="add('Canasta de Rosas y Liliums', 6000)"> Agregar </button>
     </div>
+
     <div class="product-item" category="Canastas">
         <a href="#"><img src="../../imagenes/PRODUCTOS/canasta_jazmines.jpg" alt="canasta de jazmines" >
-        Canasta de Jazmines</a>
+         Canasta de Jazmines
+    <h3>$3.000</h3>
+    </a>
+    <button class="button-add"onclick="add('canasta de Jazmines', 3000)"> Agregar </button>
     </div>
+
 </section>
 
 

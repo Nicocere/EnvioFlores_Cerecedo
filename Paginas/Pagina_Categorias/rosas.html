@@ -34,7 +34,12 @@
             @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
         </style>
 
-    </head>
+            <!-- LINK DE JAVASCRIPT -->
+    <script src="../../script.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+</head>
 
 
 
@@ -97,7 +102,11 @@
 
               <!-- Fin carrusel -->
 
-
+              <div id="comprar">
+                <button id="checkout" class="button-checkout" onclick="pay()"><i class='fas fa-shopping-cart'></i> </button>
+    
+    
+            </div>
 
     </header>
 
@@ -154,39 +163,60 @@
         <div class="product-item" category="Rosas">
             <a href="../../Paginas\Pagina_productos/CajFerRosDiam.HTML">
             <img src="../../imagenes/PRODUCTOS/caja_rosasdiamante_ferrero.jpg" alt="caja rosas diamante y ferrero rocher" >
-             Caja Rosas Diamante con Ferrero Rocher</a>
-        </div>
+            Caja Rosas Diamante con Ferrero Rocher
+            <h3>$5.500</h3>
+        </a>
+            <button class="button-add" onclick="add('caja_rosasdiamante_ferrero', 5500)"> Agregar </button>
+    </div>
+
 
         <div class="product-item" category="Rosas">
             <a href="../../Paginas/Pagina_productos/Caj18RosFer.html">
             <img src="../../imagenes/PRODUCTOS/Caj18RosFer.jpg" alt="caja 18 rosas y ferrero rocher" >
-             Caja 18 Rosas Ferrero</a>
-        </div>
+            Caja 18 Rosas Ferrero
+            <h3>$6.500</h3>
+        </a>
+            <button class="button-add" onclick="add('Caj18RosFer', 6500)"> Agregar </button>
+    </div>
 
         <div class="product-item" category="Rosas">
             <a href="../../Paginas/Pagina_productos/Caj25Rosas.html">
             <img src="../../imagenes/PRODUCTOS/Caj25ROS_ROSADAS.jpg" alt="caja 25 rosas rosadas" >
-             Caja 25 ROSAS ROSADAS</a>
-        </div>
+            Caja 25 ROSAS ROSADAS
+            <h3>$10.000</h3>
+            </a>
+            <button class="button-add" onclick="add('Caj25ROS_ROSADAS', 10000)"> Agregar </button>
+    </div>
 
         <div class="product-item" category="Rosas">
             <a href="../../Paginas/Pagina_productos/CoraFerRosas.html">
             <img src="../../imagenes/PRODUCTOS/corazon_ferrero_Rosas.jpg" alt="corazon ferrero rocher y rosas" >
-             Corazon de Rosas Y Ferrero</a>
-        </div>
+            Corazon de Rosas Y Ferrero
+            <h3>$8.000</h3>
+            </a>
+            <button class="button-add" onclick="add('corazon_ferrero_Rosas', 8000)"> Agregar </button>
+           
+   </div>
 
         <div class="product-item" category="Rosas">
             <a href="../../Paginas/Pagina_productos/Caj50RosFer.html">
             <img src="../../imagenes/PRODUCTOS/Caj50RosFer.jpg" alt="caja 50 rosas y ferrero rocher" >
-             Caja 50 rosas FERRERO ABIERTO</a>
-        </div>
+            Caja 50 rosas FERRERO ABIERTO
+            <h3>$20.500</h3>
+            </a>
+            <button class="button-add" onclick="add('Caj50RosFer', 20500)"> Agregar </button>
+        
+    </div>
 
         <div class="product-item" category="Rosas">
             <a href="../../Paginas/Pagina_productos/MinCajRosPel.html">
             <img src="../../imagenes/PRODUCTOS/mini_Caja_rosas_peluche.jpg" alt="mini caja rosas y peluche" >
-             MINI CAJA ROSAS PELUCHE</a>
-        </div>
-
+            MINI CAJA ROSAS PELUCHE
+            <h3>$3.500</h3>
+            </a>
+            <button class="button-add" onclick="add('mini_Caja_rosas_peluche', 3500)"> Agregar </button>
+        
+    </div>
 
 
     </section>
